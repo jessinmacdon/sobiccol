@@ -18,6 +18,8 @@
   --primary-color-light: #F6F5FF;
   --toggle-color: #DDD;
   --text-color: #707070;
+  --primary-button: 22px;
+  --primary-weight: 600;
 
   /* Transition */
   --tran-03: all 0.2s ease;
@@ -115,7 +117,6 @@ body.dark {
   margin-left: 90px;
   /* align-items: center; */
 }
-
 
 .sidebar header .logo-text {
   display: flex;
@@ -299,7 +300,6 @@ body.dark .switch::before {
   left: 20px;
 }
 
-
 /* Home Section */
 .home-container {
   display: flex;
@@ -345,6 +345,39 @@ body.dark .home .text {
 
 .main-content-heading {
   color: var(--primary-color);
+}
+
+/*  Login page styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 60vh;
+  margin: auto;
+}
+
+.login_heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.login_content {
+  width: 90%;
+}
+
+.login_content button {
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  font-size: var(--primary-button);
+  font-weight: var(--primary-weight);
+}
+
+.login_content form label {
+  margin-left: 5px;
 }
 
 /* styles for responsive layout */

@@ -18,35 +18,31 @@
 		<title><img src="/assets/logo/logo.jpg" alt="School logo">SOBICCOL</title>
 	</head>
 	<body>
-		<div class="home-container">
-			<div class="text heading">Login Page</div>
-
-			<div class="main-content-container">
-				<h2 class="main-content-heading">
-					Welcome back
-					<span>Please log in to access your account</span>
-				</h2>
-				<div class="main-content">
-					<!-- Bootstrap Login Form -->
-					<form id="loginForm" class="needs-validation" novalidate>
-						<div class="mb-3">
-							<label for="username" class="form-label">Username</label>
-							<input type="text" class="form-control" id="username" required />
-							<div class="invalid-feedback"> Please enter your username. </div>
-						</div>
-						<div class="mb-3">
-							<label for="password" class="form-label">Password</label>
-							<input
-								type="password"
-								class="form-control"
-								id="password"
-								required
-							/>
-							<div class="invalid-feedback"> Please enter your password. </div>
-						</div>
-						<button type="submit" class="btn btn-primary">Login </button>
-					</form>
-				</div>
+		<div class="login-container">
+			<h2 class="login_heading">
+				Welcome back
+				<span>Please log in to access your account</span>
+			</h2>
+			<div class="login_content">
+				<!-- Bootstrap Login Form -->
+				<form id="loginForm" class="needs-validation" novalidate>
+					<div class="mb-3">
+						<label for="username" class="form-label">Username</label>
+						<input type="text" class="form-control" id="username" required />
+						<div class="invalid-feedback"> Please enter your username. </div>
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">Password</label>
+						<input
+							type="password"
+							class="form-control"
+							id="password"
+							required
+						/>
+						<div class="invalid-feedback"> Please enter your password. </div>
+					</div>
+					<button type="submit" class="btn btn-primary">Login </button>
+				</form>
 			</div>
 		</div>
 
@@ -55,7 +51,8 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-body">
-						<div class="spinner"></div>
+						<div class="progress"></div>
+						<div>We are logging you in</div>
 					</div>
 				</div>
 			</div>

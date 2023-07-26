@@ -1,32 +1,68 @@
+
+
+
+
 /* Loader styles */
 #loaderModal {
-    height: 60vh;
+    height: 80vh;
 }
 
 .modal-body {
     display: flex;
+    flex-direction: column;
     align-content: center;
     align-items: center;
-    height: 150px;
+    height: 60vh;
 }
 
-.spinner {
-    width: 56px;
-    height: 56px;
+.progress {
+    width: 67.2px;
+    height: 67.2px;
     border-radius: 50%;
-    background: conic-gradient(#0000 10%, #474bff);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
-    animation: spinner-zp9dbg 1s infinite linear;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    display: none;
+    animation: progress-96zj2n 2s infinite;
 }
 
-@keyframes spinner-zp9dbg {
-    to {
-        transform: rotate(1turn);
+@keyframes progress-96zj2n {
+    0% {
+        background: conic-gradient(#474bff 0, #0000 0);
     }
+
+    12.5% {
+        background: conic-gradient(#474bff 45deg, #0000 46deg);
+    }
+
+    25% {
+        background: conic-gradient(#474bff 90deg, #0000 91deg);
+    }
+
+    37.5% {
+        background: conic-gradient(#474bff 135deg, #0000 136deg);
+    }
+
+    50% {
+        background: conic-gradient(#474bff 180deg, #0000 181deg);
+    }
+
+    62.5% {
+        background: conic-gradient(#474bff 225deg, #0000 226deg);
+    }
+
+    75% {
+        background: conic-gradient(#474bff 270deg, #0000 271deg);
+    }
+
+    87.5% {
+        background: conic-gradient(#474bff 315deg, #0000 316deg);
+    }
+
+    100% {
+        background: conic-gradient(#474bff 360deg, #0000 360deg);
+    }
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
 }
