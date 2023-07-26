@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!---- CSS  -->
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/styles/styles.css" />
 
 		<!----Icons from Boxicons CSS  -->
 		<link
@@ -14,15 +14,15 @@
 			rel="stylesheet"
 		/>
 
-		<title><img src="logo-png" alt="">SOBICCOL</title>
+		<title><img src="/assets/logo/logo.jpg" alt="School logo">SOBICCOL</title>
 	</head>
 	<body>
 		<nav class="sidebar close">
 			<header>
-				<div class="image-text">
-					<span class="image">
-						<img src="logo.jpg" alt="" />
-					</span>
+				<div class="logo-container">
+					<div >
+						<img class="logo-image" src="/assets/logo/logo.jpg" alt="school logo">
+					</div>
 
 					<div class="text logo-text">
 						<span class="name">SOCRATE BILINGUAL</span>
@@ -36,14 +36,15 @@
 
 			<div class="menu-bar">
 				<div class="menu">
-					<li class="search-box">
-						<i class="bx bx-search icon"></i>
-						<input type="text" placeholder="Search..." />
-					</li>
-
+					<ul>
+						<li class="search-box">
+							<i class="bx bx-search icon"></i>
+							<input type="text" placeholder="Search..." />
+						</li>
+					</ul>
 					<ul class="menu-links">
 						<li class="nav-link">
-							<a href="index.html">
+							<a href="admin-center.html">
 								<i class="bx bx-home-alt icon"></i>
 								<span class="text nav-text">Control centre</span>
 							</a>
@@ -86,7 +87,7 @@
 					</ul>
 				</div>
 
-				<div class="bottom-content">
+				<ul class="bottom-content">
 					<li class="">
 						<a href="#">
 							<i class="bx bx-log-out icon"></i>
@@ -105,16 +106,21 @@
 							<span class="switch"></span>
 						</div>
 					</li>
-				</div>
+				</ul>
 			</div>
 		</nav>
 
-		<section class="home">
+		<div class="home-container">
 			<div class="text heading">Dashboard</div>
 
-			<main class="main-content">This is he dashboard page where all main details and news will be displayed</main>
-		</section>
+			<div class="main-content-container">
+				<h2 class="main-content-heading">Welcome back Mr Elvis</h2>
+				<div class="main-content">
+					
+				</div>
+			</div>
+		</div>
 
-		<script src="script.js"></script>
+		<script src="/scripts/index.js"></script>
 	</body>
 </html>
