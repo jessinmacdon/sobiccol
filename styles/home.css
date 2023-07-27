@@ -1,0 +1,73 @@
+.home-logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+}
+
+.home-logo_image {
+    width: 60px;
+    height: 60px;
+}
+
+.home-log_text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Slider styles */
+.card-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    flex: 0 0 300px;
+    margin-right: 20px;
+}
+
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev-btn:focus,
+.next-btn:focus {
+    outline: none;
+}
+
+/* Hide previous button when on the first slide */
+.prev-btn[disabled] {
+    display: none;
+}
+
+/* Hide next button when on the last slide */
+.next-btn[disabled] {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: grey;
+    gap: 60px;
+    padding: 50px;
+    width: 100%;
+}
