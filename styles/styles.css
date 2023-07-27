@@ -15,6 +15,7 @@
   --body-color: #E4E9F7;
   --sidebar-color: #FFF;
   --primary-color: #695CFE;
+  --secondary-color: #FEA55C;
   --primary-color-light: #F6F5FF;
   --toggle-color: #DDD;
   --text-color: #707070;
@@ -165,7 +166,6 @@ body.dark .sidebar header .toggle {
 .sidebar.close .toggle {
   transform: translateY(-50%) rotate(0deg);
 }
-
 
 /* Menu */
 
@@ -378,6 +378,237 @@ body.dark .home .text {
 
 .login_content form label {
   margin-left: 5px;
+}
+
+/***** Admin-center styles *******/
+.home-container {
+  padding: 20px;
+}
+
+/* Header */
+.home-container .page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.not-admin-heading {
+  display: none;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+/* section divider - just trying stuff here. The look might be changed */
+.section-divider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  align-content: center;
+  gap: 50px;
+}
+
+/* profile Details Section */
+.profile-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 40px auto;
+}
+
+.user-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  gap: 50px;
+  width: 100%;
+}
+
+.user-details {
+  display: flex;
+}
+
+.user-image {
+  margin-right: 20px;
+}
+
+.user-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user-info {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detail-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.b-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+/* View Timetable Link */
+.b-container_button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.edit-button {
+  background-color: var(--secondary-color);
+}
+
+.b-container_button:hover {
+  background-color: #8B7AFF;
+}
+
+.edit-button:hover {
+  background-color: #D48A32;
+}
+
+.new-account-btn {
+  background-color: #57B68D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 25px;
+}
+
+.account-operations ul {
+  text-decoration: none;
+  width: 100%;
+  list-style: none;
+}
+
+.account-operations ul li {
+  border-radius: 6px;
+  background-color: var(--primary-color-light);
+  cursor: pointer;
+  transition: var(--tran-05);
+}
+
+.account-operations ul li input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color-light);
+  color: var(--text-color);
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: var(--tran-05);
+  margin-left: 5px;
+}
+
+.search-accounts {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.new-account-btn i {
+  margin-right: 10px;
+}
+
+.new-account-btn:hover {
+  background-color: #3D825F;
+}
+
+.admin-activities {
+  background-color: var(--primary-color);
+  padding: 120px 25px;
+}
+
+.activities-text {
+  background-color: var(--primary-color-light);
+  color: black;
+  padding: 25px;
+  border-radius: 20px;
+  margin-block: 30px;
+}
+
+/* create account modal */
+/* #createAccountModal {
+  width: 100vw;
+} */
+
+
+#createAccount {
+  margin: 15px auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.createAccountForm {
+  gap: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-left: 2px;
+  margin-bottom: 2px;
 }
 
 /* styles for responsive layout */
