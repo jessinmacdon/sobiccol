@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><img src="/assets/logo/logo.jpg" alt="School logo">SOBICCOL</title>
 
 		<!-- Add Bootstrap CSS -->
 		<link
@@ -13,17 +14,20 @@
 
 		<!-- CSS  -->
 		<link rel="stylesheet" href="/styles/styles.css" />
+		<link rel="stylesheet" href="/styles/login.css" />
 		<link rel="stylesheet" href="/styles/loader.css" />
-
-		<title><img src="/assets/logo/logo.jpg" alt="School logo">SOBICCOL</title>
 	</head>
 	<body>
 		<div class="login-container">
-			<h2 class="login_heading">
-				Welcome back
-				<span>Please log in to access your account</span>
-			</h2>
+			<div class="greetings">
+				<h1 class="login_heading-lg">
+					Welcome back to the staff center
+					<span>Please log in to access your account</span>
+				</h1>
+			</div>
 			<div class="login_content">
+				<!-- greetings - visible on small screens only -->
+				<h2 class="login_heading"> Welcome back </h2>
 				<!-- Bootstrap Login Form -->
 				<form id="loginForm" class="needs-validation" novalidate>
 					<div class="mb-3">
@@ -41,7 +45,7 @@
 						/>
 						<div class="invalid-feedback"> Please enter your password. </div>
 					</div>
-					<button type="submit" class="btn btn-primary">Login </button>
+					<button type="submit" class="btn pry-btn">Login </button>
 				</form>
 			</div>
 		</div>

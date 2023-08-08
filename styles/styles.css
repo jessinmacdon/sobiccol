@@ -17,6 +17,7 @@
   --primary-color: #9d3e9a;
   --secondary-color: #d4b061;
   --primary-btn-clr: #19214f;
+  --primary-btn-hover: #2E329F;
   --primary-color-light: #F6F5FF;
   --toggle-color: #DDD;
   --text-color: #707070;
@@ -50,6 +51,15 @@ body.dark {
   --text-color: #ccc;
 }
 
+.pry-btn {
+  background-color: var(--primary-btn-clr);
+  color: var(--primary-color-light);
+}
+
+.pry-btn:hover {
+  background-color: var(--primary-btn-hover);
+  color: var(--primary-color-light);
+}
 
 /* Sidebar */
 .sidebar {
@@ -346,39 +356,6 @@ body.dark .home .text {
 
 .main-content-heading {
   color: var(--primary-color);
-}
-
-/*  Login page styles */
-.login-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 60vh;
-  margin: auto;
-}
-
-.login_heading {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.login_content {
-  width: 90%;
-}
-
-.login_content button {
-  width: 100%;
-  margin-top: 25px;
-  text-align: center;
-  font-size: var(--primary-button);
-  font-weight: var(--primary-weight);
-}
-
-.login_content form label {
-  margin-left: 5px;
 }
 
 /***** Admin-center styles *******/
