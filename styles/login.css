@@ -41,7 +41,8 @@
     height: 100vh;
     margin: auto;
     padding: auto;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--body-color);
 }
 
 h1 {
