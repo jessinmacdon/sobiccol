@@ -85,6 +85,7 @@ h1 {
     margin-left: 5px;
 }
 
+/* queries for medium and small screens */
 @media screen and (max-width: 1189px) {
 
     .login-container {
