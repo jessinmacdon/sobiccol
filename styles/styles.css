@@ -23,12 +23,12 @@
   --text-color: #707070;
   --primary-button: 22px;
   --primary-weight: 600;
-  --nav-text-lg: 1rem;
+  --nav-text-lg: 1.1rem;
 
   /* Transition */
   --tran-03: all 0.2s ease;
   --tran-04: all 0.3s ease;
-  --tran-05: all 0.3s ease;
+  --tran-05: all 0.4s ease;
 }
 
 body {
@@ -61,21 +61,12 @@ body {
 /* Sidebar */
 .sidebar {
   height: 100vh;
-  width: 350px;
+  width: 300px;
   background: var(--primary-color);
   transition: var(--tran-05);
   -webkit-box-shadow: 4px 2.5px 5.5px -2px #2e329f;
   -moz-box-shadow: 4px 2.5px 5.5px -2px #2e329f;
   box-shadow: 4px 2.5px 5.5px -2px #2e329f;
-}
-
-/* Reusable Code */
-.sidebar li {
-  height: 50px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
 }
 
 .sidebar .icon {
@@ -91,24 +82,13 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 36px;
-  color: var(--body-color);
-}
-
-.nav-link {
-  color: var(--body-color);
-  transition: var(--tran-03);
-}
-
-.nav-text {
-  font-size: var(--nav-text-lg);
-  font-weight: 500;
-  color: var(--body-color);
 }
 
 header {
   text-align: center;
   background-color: white;
   width: 100%;
+  border-radius: 25% 25% 8% 8% / 0% 0% 6% 6%;
 }
 
 header img {
@@ -117,18 +97,37 @@ header img {
   text-align: center;
 }
 
-.sidebar li a {
+.sidebar ul li {
   list-style: none;
-  height: 100%;
+  height: 80px;
   background-color: transparent;
   display: flex;
   align-items: center;
   align-content: center;
-  height: 100%;
   width: 100%;
   border-radius: 6px;
   text-decoration: none;
   transition: var(--tran-03);
+  position: relative;
+  font-size: var(--nav-text-lg);
+  font-weight: 500;
+}
+
+.sidebar ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.bottom-content {
+  color: var(--body-color);
+}
+
+.sidebar ul li:hover {
+  color: var(--secondary-color);
+  transition: var(--tran-05);
 }
 
 /* Menu Bar */
@@ -141,7 +140,14 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 50px;
+}
+
+.sidebar ul li.active {
+  background-color: var(--secondary-color);
+  color: var(--primary-btn-clr);
+  border-radius: 0;
+  transition: var(--tran-05);
 }
 
 /* Home Section */
