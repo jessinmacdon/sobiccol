@@ -518,6 +518,17 @@ label {
   color: red;
 }
 
+.modal-body .image-container {
+  width: fit-content;
+  height: fit-content;
+}
+
+.modal-body .image-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
 /* styles for responsive layout */
 @media screen and (max-width: 767px) {
 

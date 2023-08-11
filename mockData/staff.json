@@ -15,6 +15,7 @@
 			],
 			"accountCreatedOn": "2023-06-17",
 			"accessLevel": "Admin",
+			"image": "staff8.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -27,6 +28,7 @@
 			"subjects": ["Biology", "Human Biology", "Cytology"],
 			"accountCreatedOn": "2023-06-18",
 			"accessLevel": "Standard",
+			"image": "staff7.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -39,6 +41,7 @@
 			"subjects": ["Physics", "Chemistry", "Electromagnetism"],
 			"accountCreatedOn": "2023-06-19",
 			"accessLevel": "Standard",
+			"image": "staff6.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -51,6 +54,7 @@
 			"subjects": ["History", "World History", "Cameroon History"],
 			"accountCreatedOn": "2023-06-20",
 			"accessLevel": "Admin",
+			"image": "staff5.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -63,6 +67,7 @@
 			"subjects": ["Physical Education", "Sports Science"],
 			"accountCreatedOn": "2023-06-21",
 			"accessLevel": "Standard",
+			"image": "staff4.jpeg",
 			"accountStatus": "Inactive"
 		},
 		{
@@ -75,6 +80,7 @@
 			"subjects": ["Health Education", "Nutrition"],
 			"accountCreatedOn": "2023-06-22",
 			"accessLevel": "Standard",
+			"image": "staff3.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -87,6 +93,7 @@
 			"subjects": ["Religious Studies", "Ethics"],
 			"accountCreatedOn": "2023-06-23",
 			"accessLevel": "Standard",
+			"image": "staff2.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -99,6 +106,7 @@
 			"subjects": ["Library Science"],
 			"accountCreatedOn": "2023-06-24",
 			"accessLevel": "Standard",
+			"image": "staff1.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -111,6 +119,7 @@
 			"subjects": ["English", "English Literature"],
 			"accountCreatedOn": "2023-06-25",
 			"accessLevel": "Standard",
+			"image": "staff10.jpeg",
 			"accountStatus": "Inactive"
 		},
 		{
@@ -123,6 +132,7 @@
 			"subjects": ["Biology", "Chemistry", "Physics"],
 			"accountCreatedOn": "2023-06-26",
 			"accessLevel": "Standard",
+			"image": "staff9.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -135,6 +145,7 @@
 			"subjects": ["History", "Geography"],
 			"accountCreatedOn": "2023-06-27",
 			"accessLevel": "Standard",
+			"image": "staff8.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -147,6 +158,7 @@
 			"subjects": ["French", "Spanish"],
 			"accountCreatedOn": "2023-06-28",
 			"accessLevel": "Standard",
+			"image": "staff7.jpeg",
 			"accountStatus": "Inactive"
 		},
 		{
@@ -159,6 +171,7 @@
 			"subjects": ["Computer Science"],
 			"accountCreatedOn": "2023-06-29",
 			"accessLevel": "Standard",
+			"image": "staff6.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -171,6 +184,7 @@
 			"subjects": ["Art", "Music"],
 			"accountCreatedOn": "2023-06-30",
 			"accessLevel": "Standard",
+			"image": "staff5.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -183,6 +197,7 @@
 			"subjects": ["Career Development", "Job Placement"],
 			"accountCreatedOn": "2023-07-01",
 			"accessLevel": "Standard",
+			"image": "staff4.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -195,6 +210,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-02",
 			"accessLevel": "Standard",
+			"image": "staff3.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -207,6 +223,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-03",
 			"accessLevel": "Standard",
+			"image": "staff2.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -219,6 +236,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-04",
 			"accessLevel": "Standard",
+			"image": "staff1.jpeg",
 			"accountStatus": "Inactive"
 		},
 		{
@@ -231,6 +249,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-05",
 			"accessLevel": "Standard",
+			"image": "staff3.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -243,6 +262,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-06",
 			"accessLevel": "Standard",
+			"image": "staff6.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -255,6 +275,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-07",
 			"accessLevel": "Standard",
+			"image": "staff4.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -267,6 +288,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-08",
 			"accessLevel": "Standard",
+			"image": "staff5.jpeg",
 			"accountStatus": "Inactive"
 		},
 		{
@@ -279,6 +301,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-09",
 			"accessLevel": "Standard",
+			"image": "staff10.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -291,6 +314,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-10",
 			"accessLevel": "Standard",
+			"image": "staff3.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -303,6 +327,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-11",
 			"accessLevel": "Standard",
+			"image": "staff2.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -315,6 +340,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-12",
 			"accessLevel": "Standard",
+			"image": "staff8.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -327,6 +353,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-13",
 			"accessLevel": "Standard",
+			"image": "staff5.jpeg",
 			"accountStatus": "Inactive"
 		},
 		{
@@ -339,6 +366,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-14",
 			"accessLevel": "Standard",
+			"image": "staff10.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -351,6 +379,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-15",
 			"accessLevel": "Standard",
+			"image": "staff7.jpeg",
 			"accountStatus": "Active"
 		},
 		{
@@ -363,6 +392,7 @@
 			"subjects": [],
 			"accountCreatedOn": "2023-07-16",
 			"accessLevel": "Standard",
+			"image": "staff1.jpeg",
 			"accountStatus": "Active"
 		}
 	]

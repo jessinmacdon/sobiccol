@@ -22,7 +22,7 @@
 		/>
 
 		<!-- CSS  -->
-		<link rel="stylesheet" href="/styles/styles.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
 
 		<!-- Icons from Boxicons CSS  -->
 		<link
@@ -208,7 +208,7 @@
 									placeholder="Start typing a name"
 								/>
 							</div>
-							<div class="create-btn">
+							<div class="btn create-btn pry-btn">
 								<i class="bx bx-plus"></i>
 								<span>Add new staff</span>
 							</div>
@@ -216,6 +216,11 @@
 						<div class="staff-list-container">
 							<h3>Staff list</h3>
 							<div class="staff-list"></div>
+							<div class="error-message" style="display: none">
+								Sorry, we couldn't find the name you entered. Please
+								double-check the entered name. You can create a new account
+								using the Add New Staff button above.
+							</div>
 						</div>
 					</div>
 					<!-- Tab pane for managing classes -->
@@ -254,7 +259,10 @@
 							<div class="modal-body">
 								<!-- Staff details will be displayed here -->
 							</div>
-							<div class="modal-footer"></div>
+							<div class="modal-footer">
+								<button class="btn btn-danger deactivate-btn">Deactivate</button>
+								<button class="btn btn-primary activate-btn">Activate</button>
+							</div>
 						</div>
 					</div>
 				</div>
