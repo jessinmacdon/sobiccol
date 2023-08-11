@@ -8,6 +8,12 @@
 		<!-- CSS  -->
 		<link rel="stylesheet" href="/styles/styles.css" />
 
+		<!-- google icons -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+		/>
+
 		<!-- Icons from Boxicons CSS  -->
 		<link
 			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
@@ -30,26 +36,49 @@
 								<span class="nav-text">Dashboard</span>
 							</li>
 							<li class="nav-link">
-								<a href="calendar.html"></a>
+								<a href="account.html"></a>
+								<i class="bx bxs-user icon"></i>
+								<span class="nav-text">My account</span>
+							</li>
+
+							<li class="nav-link">
+								<!-- <a href="student-centre.html"></a> -->
+								<span class="material-symbols-outlined icon">
+									person_raised_hand
+								</span>
+								<span class="nav-text">Students</span>
+							</li>
+							<li class="nav-link">
+								<!-- <a href="student-centre.html"></a> -->
+								<i class="bx bxs-report icon"></i>
+								<span class="nav-text">Results</span>
+							</li>
+							<li class="nav-link">
+								<!-- <a href="staff-centre.html"></a> -->
+								<i class="bx bxs-chalkboard icon"></i>
+								<span class="nav-text">Staff centre</span>
+							</li>
+							<li class="nav-link">
+								<!-- <a href="calendar.html"></a> -->
 								<i class="bx bxs-calendar icon"></i>
 								<span class="nav-text">School calendar</span>
-							</li>
-
-							<li class="nav-link">
-								<a href="student-centre.html"></a>
-								<i class="bx bx-list-ul icon"></i>
-								<span class="nav-text">Student centre</span>
-							</li>
-
-							<li class="nav-link">
-								<a href="staff-centre.html"></a>
-								<i class="bx bxs-graduation icon"></i>
-								<span class="nav-text">Staff centre</span>
 							</li>
 						</ul>
 					</div>
 
 					<ul class="bottom-content">
+						<li class="">
+							<span class="material-symbols-outlined icon"> language </span>
+							<div class="custom-select">
+								<span id="selectedLanguage" class="selected-language"
+									>English</span
+								>
+								<select id="language" name="language">
+									<option value="en" selected>English</option>
+									<option value="fr">French</option>
+								</select>
+							</div>
+						</li>
 						<li class="">
 							<a href="#"></a>
 							<i class="bx bx-log-out icon"></i>
@@ -63,12 +92,24 @@
 				<div class="text heading">Dashboard</div>
 
 				<div class="main-content-container">
-					<h2 class="main-content-heading">Welcome back Mr Elvis</h2>
-					<div class="main-content"> </div>
+					<h2 class="main-content-heading"
+						>The dashboard will display the folwlowing elements:</h2
+					>
+					<p
+						>The teachers calendar/time-table for the day, their assigned
+						classes, and their recent activities/actions on the platform.</p
+					>
+					<p>For now let us focus on the control center</p>
+					<div class="main-content">
+						<a href="control-center.html"
+							>This will take you to the control center</a
+						>
+					</div>
 				</div>
 			</div>
 		</div>
 
+		<script src="/scripts/dashboard.js"></script>
 		<script src="/scripts/index.js"></script>
 	</body>
 </html>
