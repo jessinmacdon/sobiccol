@@ -1,0 +1,112 @@
+{
+  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "periods": [
+    "1 (8:00 am - 8:45 am)",
+    "2 (8:45 am - 9:30 am)",
+    "3 (9:30 am - 10:15 am)",
+    "4 (10:30 am - 11:15 am)",
+    "5 (11:15 am - 12:00 pm)",
+    "6 (12:00 pm - 12:45 pm)",
+    "7 (12:45 pm - 1:30 pm)"
+  ],
+  "breaks": [
+    "Short Break (10:15 am - 10:30 am)",
+    "Long Break (12:00 pm - 12:45 pm)"
+  ],
+  "classes": {
+    "Form 1": {
+      "Monday": {
+        "Period 1": "Mathematics",
+        "Period 2": "English Language",
+        "Period 3": "French",
+        "Period 4": "Biology",
+        "Period 5": "Chemistry",
+        "Period 6": "Physics",
+        "Period 7": "History"
+      },
+      "Tuesday": {
+        "Period 1": "English Language",
+        "Period 2": "French",
+        "Period 3": "Biology",
+        "Period 4": "Chemistry",
+        "Period 5": "Physics",
+        "Period 6": "History",
+        "Period 7": "Economic"
+      },
+      "Wednesday": {
+        "Period 1": "Mathematics",
+        "Period 2": "English Language",
+        "Period 3": "French",
+        "Period 4": "Biology",
+        "Period 5": "Chemistry",
+        "Period 6": "Physics",
+        "Period 7": "Geography"
+      },
+      "Thursday": {
+        "Period 1": "English Language",
+        "Period 2": "French",
+        "Period 3": "Biology",
+        "Period 4": "Chemistry",
+        "Period 5": "Physics",
+        "Period 6": "History",
+        "Period 7": "Economic"
+      },
+      "Friday": {
+        "Period 1": "Mathematics",
+        "Period 2": "English Language",
+        "Period 3": "French",
+        "Period 4": "Biology",
+        "Period 5": "Chemistry",
+        "Period 6": "Physics",
+        "Period 7": "Geography"
+      }
+    },
+    "Form 2": {
+      "Monday": {
+        "Period 1": "Mathematics",
+        "Period 2": "English Language",
+        "Period 3": "French",
+        "Period 4": "Biology",
+        "Period 5": "Chemistry",
+        "Period 6": "Physics",
+        "Period 7": "History"
+      },
+      "Tuesday": {
+        "Period 1": "English Language",
+        "Period 2": "French",
+        "Period 3": "Biology",
+        "Period 4": "Chemistry",
+        "Period 5": "Physics",
+        "Period 6": "History",
+        "Period 7": "Economic"
+      },
+      "Wednesday": {
+        "Period 1": "Mathematics",
+        "Period 2": "English Language",
+        "Period 3": "French",
+        "Period 4": "Biology",
+        "Period 5": "Chemistry",
+        "Period 6": "Physics",
+        "Period 7": "Geography"
+      },
+      "Thursday": {
+        "Period 1": "English Language",
+        "Period 2": "French",
+        "Period 3": "Biology",
+        "Period 4": "Chemistry",
+        "Period 5": "Physics",
+        "Period 6": "History",
+        "Period 7": "Economic"
+      },
+      "Friday": {
+        "Period 1": "Mathematics",
+        "Period 2": "English Language",
+        "Period 3": "French",
+        "Period 4": "Biology",
+        "Period 5": "Chemistry",
+        "Period 6": "Physics",
+        "Period 7": "Geography"
+      }
+    }
+  }
+}
