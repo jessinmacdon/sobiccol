@@ -1,0 +1,945 @@
+{
+	"branches": [
+		{
+			"name": "Grammar",
+			"sections": [
+				{
+					"name": "Anglophone",
+					"stages": [
+						{
+							"name": "Form 1",
+							"classes": [
+								{
+									"name": "A",
+									"size": 25,
+									"classMaster": "John Doe",
+									"headBoy": "Michael",
+									"headGirl": "Emily"
+								},
+								{
+									"name": "B",
+									"size": 30,
+									"classMaster": "Jane Smith",
+									"headBoy": "James",
+									"headGirl": "Olivia"
+								},
+								{
+									"name": "C",
+									"size": 28,
+									"classMaster": "Robert Johnson",
+									"headBoy": "William",
+									"headGirl": "Sophia"
+								}
+							]
+						},
+						{
+							"name": "Form 2",
+							"classes": [
+								{
+									"name": "A",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "B",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								},
+								{
+									"name": "C",
+									"size": 27,
+									"classMaster": "Maria Martinez",
+									"headBoy": "Mason",
+									"headGirl": "Isabella"
+								}
+							]
+						},
+						{
+							"name": "Form 3",
+							"classes": [
+								{
+									"name": "A",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "B",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								},
+								{
+									"name": "C",
+									"size": 27,
+									"classMaster": "Maria Martinez",
+									"headBoy": "Mason",
+									"headGirl": "Isabella"
+								}
+							]
+						},
+						{
+							"name": "Form 4",
+							"classes": [
+								{
+									"name": "A",
+									"size": 50,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "B",
+									"size": 46,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								},
+								{
+									"name": "C",
+									"size": 32,
+									"classMaster": "Maria Martinez",
+									"headBoy": "Mason",
+									"headGirl": "Isabella"
+								}
+							]
+						},
+						{
+							"name": "Form 5",
+							"classes": [
+								{
+									"name": "A",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "B",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								},
+								{
+									"name": "C",
+									"size": 33,
+									"classMaster": "Maria Martinez",
+									"headBoy": "Mason",
+									"headGirl": "Isabella"
+								}
+							]
+						},
+						{
+							"name": "Lower Sixth",
+							"classes": [
+								{
+									"name": "Science",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "Arts",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								}
+							]
+						},
+						{
+							"name": "Upper Sixth",
+							"classes": [
+								{
+									"name": "Science",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "Arts",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Francophone",
+					"stages": [
+						{
+							"name": "Septième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Sixième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Cinquième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Quatrième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Troisième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Deuxième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Premiere",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Commercial",
+			"sections": [
+				{
+					"name": "Anglophone",
+					"stages": [
+						{
+							"name": "Form 1",
+							"classes": [
+								{
+									"name": "A",
+									"size": 25,
+									"classMaster": "John Doe",
+									"headBoy": "Michael",
+									"headGirl": "Emily"
+								},
+								{
+									"name": "B",
+									"size": 30,
+									"classMaster": "Jane Smith",
+									"headBoy": "James",
+									"headGirl": "Olivia"
+								},
+								{
+									"name": "C",
+									"size": 28,
+									"classMaster": "Robert Johnson",
+									"headBoy": "William",
+									"headGirl": "Sophia"
+								}
+							]
+						},
+						{
+							"name": "Form 2",
+							"classes": [
+								{
+									"name": "A",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "B",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								},
+								{
+									"name": "C",
+									"size": 27,
+									"classMaster": "Maria Martinez",
+									"headBoy": "Mason",
+									"headGirl": "Isabella"
+								}
+							]
+						},
+						{
+							"name": "Form 3",
+							"classes": [
+								{
+									"name": "A",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "B",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								},
+								{
+									"name": "C",
+									"size": 27,
+									"classMaster": "Maria Martinez",
+									"headBoy": "Mason",
+									"headGirl": "Isabella"
+								}
+							]
+						},
+						{
+							"name": "Form 4",
+							"classes": [
+								{
+									"name": "Commercial",
+									"size": 50,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								}
+							]
+						},
+						{
+							"name": "Form 5",
+							"classes": [
+								{
+									"name": "Commercial",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								}
+							]
+						},
+						{
+							"name": "Lower Sixth",
+							"classes": [
+								{
+									"name": "Commercial",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								}
+							]
+						},
+						{
+							"name": "Upper Sixth",
+							"classes": [
+								{
+									"name": "Commercial",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Francophone",
+					"stages": [
+						{
+							"name": "Septième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Sixième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Cinquième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Quatrième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Troisième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Deuxième",
+							"classes": [
+								{
+									"name": "Commerce",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								}
+							]
+						},
+						{
+							"name": "Premiere",
+							"classes": [
+								{
+									"name": "Commerce",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Technical",
+			"sections": [
+				{
+					"name": "Anglophone",
+					"stages": [
+						{
+							"name": "Form 1",
+							"classes": [
+								{
+									"name": "A",
+									"size": 25,
+									"classMaster": "John Doe",
+									"headBoy": "Michael",
+									"headGirl": "Emily"
+								},
+								{
+									"name": "B",
+									"size": 30,
+									"classMaster": "Jane Smith",
+									"headBoy": "James",
+									"headGirl": "Olivia"
+								},
+								{
+									"name": "C",
+									"size": 28,
+									"classMaster": "Robert Johnson",
+									"headBoy": "William",
+									"headGirl": "Sophia"
+								}
+							]
+						},
+						{
+							"name": "Form 2",
+							"classes": [
+								{
+									"name": "A",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "B",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								},
+								{
+									"name": "C",
+									"size": 27,
+									"classMaster": "Maria Martinez",
+									"headBoy": "Mason",
+									"headGirl": "Isabella"
+								}
+							]
+						},
+						{
+							"name": "Form 3",
+							"classes": [
+								{
+									"name": "A",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								},
+								{
+									"name": "B",
+									"size": 29,
+									"classMaster": "Laura White",
+									"headBoy": "Benjamin",
+									"headGirl": "Emma"
+								},
+								{
+									"name": "C",
+									"size": 27,
+									"classMaster": "Maria Martinez",
+									"headBoy": "Mason",
+									"headGirl": "Isabella"
+								}
+							]
+						},
+						{
+							"name": "Form 4",
+							"classes": [
+								{
+									"name": "Technical",
+									"size": 50,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								}
+							]
+						},
+						{
+							"name": "Form 5",
+							"classes": [
+								{
+									"name": "Technical",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								}
+							]
+						},
+						{
+							"name": "Lower Sixth",
+							"classes": [
+								{
+									"name": "Technical",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								}
+							]
+						},
+						{
+							"name": "Upper Sixth",
+							"classes": [
+								{
+									"name": "Technical",
+									"size": 26,
+									"classMaster": "David Lee",
+									"headBoy": "Ethan",
+									"headGirl": "Ava"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Francophone",
+					"stages": [
+						{
+							"name": "Septième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Sixième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Cinquième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Quatrième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								},
+								{
+									"name": "B",
+									"size": 28,
+									"classMaster": "Sophie Martin",
+									"headBoy": "Louis",
+									"headGirl": "Camille"
+								},
+								{
+									"name": "C",
+									"size": 25,
+									"classMaster": "Pierre Dubois",
+									"headBoy": "Léo",
+									"headGirl": "Zoé"
+								}
+							]
+						},
+						{
+							"name": "Troisième",
+							"classes": [
+								{
+									"name": "A",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								}
+							]
+						},
+						{
+							"name": "Deuxième",
+							"classes": [
+								{
+									"name": "Technique",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								}
+							]
+						},
+						{
+							"name": "Premiere",
+							"classes": [
+								{
+									"name": "Technique",
+									"size": 24,
+									"classMaster": "Jean Dupont",
+									"headBoy": "Thomas",
+									"headGirl": "Léa"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

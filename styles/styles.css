@@ -58,22 +58,23 @@ ul {
   padding-left: 0;
   border: none;
 }
+
 .nav-tabs {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
 .nav-tabs .nav-link {
-    margin-bottom: 10px; 
-    background: none;
-    border: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  margin-bottom: 10px;
+  background: none;
+  border: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .nav-tabs .nav-link.active {
-    color: var(--primary-btn-hover);
-    background-color: transparent;
-    border-color: none;
+  color: var(--primary-btn-hover);
+  background-color: transparent;
+  border-color: none;
 }
 
 /* ul active {
@@ -184,8 +185,10 @@ header img {
 
 .selected-language {
   position: relative;
-  padding-right: 20px; /* Add some padding to accommodate the dropdown icon */
-  cursor: pointer; /* Add a cursor pointer to indicate interaction */
+  padding-right: 20px;
+  /* Add some padding to accommodate the dropdown icon */
+  cursor: pointer;
+  /* Add a cursor pointer to indicate interaction */
 }
 
 /* .selected-language::after {
@@ -503,15 +506,15 @@ label {
 
 /* styles for the manage staff tab pane in the control center */
 .staff-list-item {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modal-content.active-status .modal-body p strong {
-    color: green;
+  color: green;
 }
 
 .modal-footer #btnDeactivate {
-    color: red;
+  color: red;
 }
 
 #textActive {
@@ -526,6 +529,70 @@ label {
 .modal-body .image-container img {
   width: 500px;
   height: 500px;
+  object-fit: contain;
+}
+
+/* styles for class tab pane */
+.class-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.class-table th,
+.class-table td {
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.class-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Example styling for highlighted students */
+.class-master {
+  font-weight: bold;
+  color: blue;
+}
+
+.head-boy {
+  font-weight: bold;
+  color: green;
+}
+
+.head-girl {
+  font-weight: bold;
+  color: pink;
+}
+
+/* Style for clickable parts of the table */
+.class-name {
+  cursor: pointer;
+}
+
+/* Style for non-clickable parts of the table */
+.class-table td:not(.class-name) {
+  cursor: default;
+}
+
+.class-master {
+  color: yellow;
+}
+
+/* student modal styling */
+
+.student-image {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.student-image img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
