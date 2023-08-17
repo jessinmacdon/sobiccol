@@ -209,7 +209,12 @@
 									placeholder="Start typing a name"
 								/>
 							</div>
-							<div class="btn create-btn pry-btn">
+							<div class="my-btn pry-btn">
+								<a
+									href="#"
+									data-bs-toggle="modal"
+									data-bs-target="#newStaffModal"
+								></a>
 								<i class="bx bx-plus"></i>
 								<span>Create new staff</span>
 							</div>
@@ -240,7 +245,12 @@
 									placeholder="Start typing a name"
 								/>
 							</div>
-							<div class="btn create-btn pry-btn">
+							<div class="btn my-btn pry-btn">
+								<a
+									href="#"
+									data-bs-toggle="modal"
+									data-bs-target="#newClassModal"
+								></a>
 								<i class="bx bx-plus"></i>
 								<span>Create new class</span>
 							</div>
@@ -263,7 +273,12 @@
 									placeholder="Start typing a name"
 								/>
 							</div>
-							<div class="btn create-btn pry-btn">
+							<div class="btn pry-btn my-btn">
+								<a
+									href="#"
+									data-bs-toggle="modal"
+									data-bs-target="#newStudModal"
+								></a>
 								<i class="bx bx-plus"></i>
 								<span>Add new student</span>
 							</div>
@@ -313,6 +328,8 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- //Added on 17.08 -->
 
 				<!-- Staff details Modal -->
 				<div
@@ -407,6 +424,23 @@
 							</div>
 							<div class="modal-body student-modal-body" id="studModalBody">
 								<!-- Student details will be displayed here -->
+								<div>
+									<p><strong>Remarks:</strong></p>
+									<ul class="remarks-list">
+										<!-- Remarks will be added dynamically here -->
+									</ul>
+									<div class="update-fields">
+										<textarea
+											id="remarks"
+											class="form-control"
+											rows="3"
+											placeholder="Add remark..."
+										></textarea>
+										<a href="#" class="update-field" data-field="remarks"
+											>Save Remark</a
+										>
+									</div>
+								</div>
 							</div>
 							<div class="modal-footer">
 								<button class="btn btn-primary print-id-btn">Print ID</button>
@@ -418,6 +452,307 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- create new staff account modal -->
+				<div
+					class="modal fade add-staff-modal"
+					id="newStaffModal"
+					tabindex="-1"
+					aria-labelledby="newStaffModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="newStaffModalLabel"
+									>Staff Details</h5
+								>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body" id="newStaffModalBody">
+								<form action="post" class="new-staff">
+									<form-field>
+										<form-field>
+											<div class="form-group">
+												<div class="staff-names">
+													<label for="newFirstName">
+														First name<span>&#42;</span>
+													</label>
+													<input
+														type="text"
+														id="newFirstName"
+														placeholder="Enter first name"
+														required
+													/>
+												</div>
+												<div class="staff-names">
+													<label for="newLastName">
+														Last name<span>&#42;</span>
+													</label>
+													<input
+														type="text"
+														id="newLastName"
+														placeholder="Enter Last name"
+														required
+													/>
+												</div>
+												<div class="form-group">
+													<div class="account-details">
+														<label for="newPhoneNumber">
+															Phone number<span>&#42;</span>
+														</label>
+														<input
+															type="tel"
+															id="newPhoneNumber"
+															placeholder="6xx xxx xx1"
+															required
+														/>
+													</div>
+													<div class="account-details">
+														<label for="newEmail">Email</label>
+														<input type="email" id="newEmail" />
+													</div>
+												</div>
+											</div>
+										</form-field>
+									</form-field>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<div class="cancel-btn my-btn">
+									<a href="#" data-bs-dismiss="modal"></a>
+									<span>Cancel</span>
+								</div>
+								<div class="my-btn pry-btn">
+									<a href="#" data-bs-dismiss="modal"></a>
+									<span>Create</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- create new student modal -->
+				<div
+					class="modal fade add-stud-modal"
+					id="newStudModal"
+					tabindex="-1"
+					aria-labelledby="newStudModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="newStudModalLabel"
+									>Staff Details</h5
+								>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body" id="newStudModalBody">
+								<form action="post" class="new-stud">
+									<div class="form-group">
+										<div class="stud-names">
+											<label for="studFirstName" class="form-label">
+												First name<span>&#42;</span>
+											</label>
+											<input
+												class="form-control"
+												type="text"
+												id="studFirstName"
+												placeholder="Enter first name"
+												required
+											/>
+										</div>
+										<div class="staff-names">
+											<label for="studLastName" class="form-label">
+												Last name<span>&#42;</span>
+											</label>
+											<input
+												class="form-control"
+												type="text"
+												id="studLastName"
+												placeholder="Enter Last name"
+												required
+											/>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="account-details">
+											<label for="studPhoneNumber" class="form-label">
+												Date of birth<span>&#42;</span>
+											</label>
+											<input
+												class="form-control"
+												type="date"
+												id="studPhoneNumber"
+												required
+											/>
+										</div>
+										<div class="account-details">
+											<label for="studSex" class="form-label"
+												>Sex<span>&#42;</span>
+											</label>
+											<select class="form-select" id="studSex" required>
+												<option value="" selected>Select sex</option>
+												<option value="1">Male</option>
+												<option value="2">Female</option>
+											</select>
+										</div>
+										<div class="account-details">
+											<label for="parentName" class="form-label">
+												Parent/Guardian<span>&#42;</span>
+											</label>
+											<input
+												class="form-control"
+												type="text"
+												id="parentName"
+												required
+											/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Entry class</label>
+										<div class="select-class-container">
+											<div class="form-group">
+												<label for="newStudStage">Branch</label>
+												<select id="newStudbranch" class="form-control">
+													<!-- Branch options will be added dynamically -->
+													<option disabled selected>Select Branch</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="newStudStage">Level</label>
+												<select
+													id="newStudStage"
+													class="form-control"
+													style="display: none"
+												>
+													<!-- Stage options will be added dynamically -->
+													<option disabled selected>Select level</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Class</label>
+												<div
+													id="newStudClassButtons"
+													style="display: none"
+												></div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<div class="cancel-btn my-btn">
+									<a href="#" data-bs-dismiss="modal"></a>
+									<span>Cancel</span>
+								</div>
+								<div class="my-btn pry-btn">
+									<a href="#" data-bs-dismiss="modal"></a>
+									<span>Add student</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- create new class modal -->
+				<div
+					class="modal fade add-Class-modal"
+					id="newClassModal"
+					tabindex="-1"
+					aria-labelledby="newClassModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="newClassModalLabel">New Class</h5>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body" id="newClassModalBody">
+								<form action="post" class="new-Class">
+									<div class="form-group">
+										<div class="select-class-container">
+											<div class="form-group">
+												<label for="newClassStage">Branch</label>
+												<select
+													id="newClassbranch"
+													class="form-control"
+													required
+												>
+													<!-- Branch options will be added dynamically -->
+													<option value="" disabled selected
+														>Select Branch</option
+													>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="newClassStage">Level</label>
+												<select
+													id="newClassStage"
+													class="form-control"
+													style="display: none"
+													required
+												>
+													<!-- Stage options will be added dynamically -->
+													<option value="" disabled selected
+														>Select level</option
+													>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="newClassInitials">Class</label>
+												<input
+													type="text"
+													id="newClassInitials"
+													class="form-control"
+													required
+												/>
+											</div>
+											<div class="addClassExists">
+												The class you are trying to create already exists.
+												Please review the information you entered and correct it
+												if necessary. You can use the search field on the
+												classes page to filter the list of existing classes.
+											</div>
+											<div class="class-created">
+												Class Successfully Created
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<div class="cancel-btn my-btn">
+									<a href="#" data-bs-dismiss="modal"></a>
+									<span>Cancel</span>
+								</div>
+								<div class="my-btn pry-btn">
+									<a href="#" id="createClassBtn"></a>
+									<span>Add Class</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- create new class timetable modal -->
+
+				<!-- create new subject timetable modal -->
 			</main>
 		</div>
 
@@ -446,5 +781,6 @@
 		<script src="scripts/class.js"></script>
 		<script src="scripts/students.js"></script>
 		<script src="scripts/calendar.js"></script>
+		<script src="scripts/create.js"></script>
 	</body>
 </html>

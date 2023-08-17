@@ -16,10 +16,13 @@
   --sidebar-color: #FFF;
   --primary-color: #19214f;
   --secondary-btn-color: #d4b061;
+  --secondary-btn-hover: #f0d9a5;
   --secondary-color: #d4b061;
   --primary-btn-clr: #9d3e9a;
   --primary-btn-hover: #c265c1;
   --primary-color-light: #F6F5FF;
+  --cancel-btn-color: #c26565;
+  --cancel-btn-hover: #d99a9a;
   --toggle-color: #DDD;
   --text-color: #707070;
   --primary-button: 22px;
@@ -44,6 +47,7 @@ body {
   color: #fff;
 }
 
+/* reusable buttons */
 .pry-btn {
   background-color: var(--primary-btn-clr);
   color: var(--primary-color-light);
@@ -53,6 +57,39 @@ body {
   background-color: var(--primary-btn-hover);
   color: var(--primary-color-light);
 }
+
+.cancel-btn {
+  background-color: var(--cancel-btn-color);
+  color: var(--primary-color-light);
+}
+
+.cancel-btn:hover {
+  background-color: var(--cancel-btn-hover);
+  color: var(--primary-color-light);
+}
+
+.my-btn {
+  position: relative;
+  padding: 10px;
+  max-width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.my-btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/***** end reusable btn ******/
+
 
 ul {
   padding-left: 0;
@@ -550,6 +587,11 @@ label {
 .class-table th {
   background-color: #f0f0f0;
   font-weight: bold;
+}
+
+.class-created,
+.addClassExists {
+  display: none;
 }
 
 /* Example styling for highlighted students */

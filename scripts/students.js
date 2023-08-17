@@ -35,37 +35,77 @@ document.addEventListener("DOMContentLoaded", function () {
 								<p><strong>Parent/Guardian:</strong> ${clickedStudent.parent_guardian}</p>
 								<p><strong>Enrolment Date:</strong> ${clickedStudent.enrolment_date}</p>
 								<p><strong>Remarks:</strong> ${clickedStudent.remarks}</p>
-								<div class="update-fields">
-									<label for="remarks">Remarks:</label>
-									<input
-										type="text"
-										id="remarks"
-										class="form-control"
-										value="${clickedStudent.remarks}"
-										disabled
-									/>
-									<a href="#" class="update-field" data-field="remarks">Update</a>
-								</div>
+								<div class="remarks-section">
+                        			<label for="remarks">Remarks:</label>
+                        			<textarea
+                            			id="remarks"
+                            			class="form-control"
+                            			placeholder="Add a remark..."
+                        			>
+									</textarea>
+                        			<a href="#" class="add-remark-btn" data-field="remarks">Add Remark</a>
+                        			<ul class="remarks-list"></ul>
+                    			</div>
 							</div>
 						</div>
 					`;
 
-					const updateLinks = modalBody.querySelectorAll(".update-field");
-					updateLinks.forEach((link) => {
-						link.addEventListener("click", function (event) {
-							event.preventDefault();
-							const field = event.target.getAttribute("data-field");
-							const input = modalBody.querySelector(`#${field}`);
+					const addRemarkBtn = modalBody.querySelector(".add-remark-btn");
+					const remarksList = modalBody.querySelector(".remarks-list");
 
-							if (input.hasAttribute("disabled")) {
-								input.removeAttribute("disabled");
-								link.textContent = "Save Changes";
-							} else {
-								input.setAttribute("disabled", true);
-								link.textContent = "Update";
-							}
-						});
+					// If remarks are not already an array, convert them into an array
+					if (!Array.isArray(clickedStudent.remarks)) {
+						clickedStudent.remarks = [];
+					}
+
+					//Each remark will receive a date and string. Date signifying the date the remark was added and the remark that was added.
+					addRemarkBtn.addEventListener("click", function (event) {
+						event.preventDefault();
+						const field = event.target.getAttribute("data-field");
+						const textarea = modalBody.querySelector(`#${field}`);
+
+						if (textarea.value.trim() !== "") {
+							const newRemark = {
+								date: new Date().toISOString(),
+								text: textarea.value,
+							};
+
+							clickedStudent.remarks.push(newRemark);
+
+							// Update JSON data with the new remarks array
+							updateStudentJSON(data);
+
+							const remarkItem = document.createElement("li");
+							remarkItem.innerHTML = `
+            <span>${newRemark.date}</span>
+            <p>${newRemark.text}</p>
+        `;
+							remarksList.appendChild(remarkItem);
+
+							addRemarkBtn.textContent = "Remark Added"; // Change button text
+
+							textarea.value = "";
+						}
 					});
+
+					//you will get a few errors here which can be easily fixed when you add the http requests. THe PUT method is not allowed when updating json files locally. Reach out to me if you need more info on this part but the general interaction works well. works.
+					function updateStudentJSON(data) {
+						// Update the JSON data in this function
+						fetch("mockData/students.json", {
+							method: "PUT", // Use the appropriate HTTP method
+							headers: {
+								"Content-Type": "application/json",
+							},
+							body: JSON.stringify(data),
+						})
+							.then((response) => response.json())
+							.then((updatedData) => {
+								console.log("JSON data updated:", updatedData);
+							})
+							.catch((error) => {
+								console.error("Error updating JSON data:", error);
+							});
+					}
 
 					const studentModal = new bootstrap.Modal(
 						document.getElementById("studentModal")
