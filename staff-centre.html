@@ -4,126 +4,346 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title> SOBICCOL | Control center </title>
 
-		<!---- CSS  -->
-		<link rel="stylesheet" href="/styles/styles.css" />
+		<!-- bootstrap -->
 
-		<!----Icons from Boxicons CSS  -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<!-- google icons -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+		/>
+
+		<!-- CSS  -->
+		<link rel="stylesheet" href="styles/styles.css" />
+
+		<!-- Icons from Boxicons CSS  -->
 		<link
 			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
 			rel="stylesheet"
 		/>
-
-		<title><img src="/assets/logo/logo.jpg" alt="School logo">SOBICCOL</title>
 	</head>
 	<body>
-		<nav class="sidebar close">
-			<header>
-				<div class="image-text">
-					<span class="image">
-						<img src="/assets/logo/logo.jpg" alt="school logo" />
-					</span>
+		<div class="dashboard-container">
+			<nav class="sidebar">
+				<!-- Takes the user back to the dashboard -->
+				<div class="back-button">
+					<a href="dashboard.html"></a>
+					<i class="bx bx-arrow-back"></i>
+				</div>
+				<header>
+					<img src="/assets/logo/logo.jpg" alt="school logo" />
+				</header>
 
-					<div class="text logo-text">
-						<span class="name">SOCRATE BILINGUAL</span>
-						<span class="name">COMPREHENSIVE</span>
-						<span class="name">COLLEGE</span>
+				<div class="menu-bar">
+					<div class="menu">
+						<ul class="menu-links nav nav-tabs" role="tablist">
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									data-bs-toggle="tab"
+									href="control-center.html#manageAdminProfile"
+								></a>
+								<i class="bx bx-home-alt icon"></i>
+								<span class="nav-text">My account</span>
+							</li>
+
+							<li class="nav-item">
+								<a href="#manageStaff" class="nav-link"></a>
+								<i class="bx bxs-chalkboard icon"></i>
+								<span class="nav-text">Staff</span>
+							</li>
+							<li class="nav-item">
+								<a
+									href="control-center.html#manageClasses"
+									class="nav-link"
+								></a>
+								<i class="bx bxs-school icon"></i>
+								<span class="nav-text">Classes</span>
+							</li>
+
+							<li class="nav-item">
+								<a href="student-centre.html" class="nav-link"></a>
+								<span class="material-symbols-outlined icon">
+									person_raised_hand
+								</span>
+								<span class="nav-text">Students</span>
+							</li>
+
+							<li class="nav-item">
+								<a
+									href="control-center.html#manageCalendar"
+									class="nav-link"
+									data-bs-toggle="tab"
+								></a>
+								<i class="bx bxs-calendar icon"></i>
+								<span class="nav-text">Calendar</span>
+							</li>
+						</ul>
+						<ul class="bottom-content">
+							<li class="">
+								<a href="#"></a>
+								<i class="bx bx-log-out icon"></i>
+								<span class="nav-text">Logout</span>
+							</li>
+						</ul>
 					</div>
 				</div>
-
-				<i class="bx bx-chevron-right toggle"></i>
-			</header>
-
-			<div class="menu-bar">
-				<div class="menu">
-					<li class="search-box">
-						<i class="bx bx-search icon"></i>
-						<input type="text" placeholder="Search..." />
-					</li>
-
-					<ul class="menu-links">
-						<li class="nav-link">
-							<a href="index.html">
-								<i class="bx bx-home-alt icon"></i>
-								<span class="text nav-text">Control centre</span>
-							</a>
-						</li>
-
-						<li class="nav-link">
-							<a href="calendar.html">
-								<i class="bx bxs-calendar icon"></i>
-								<span class="text nav-text">Calendar</span>
-							</a>
-						</li>
-
-						<li class="nav-link">
-							<a href="email.html">
-								<i class="bx bx-envelope icon"></i>
-								<span class="text nav-text">Email</span>
-							</a>
-						</li>
-
-						<li class="nav-link">
-							<a href="student-centre.html">
-								<i class="bx bx-list-ul icon"></i>
-								<span class="text nav-text">Student centre</span>
-							</a>
-						</li>
-
-						<li class="nav-link">
-							<a href="staff-centre.html">
-								<i class="bx bxs-graduation icon"></i>
-								<span class="text nav-text">Staff centre</span>
-							</a>
-						</li>
-
-						<li class="nav-link">
-							<a href="notificaions.html">
-								<i class="bx bx-bell icon"></i>
-								<span class="text nav-text">Notifications</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="bottom-content">
-					<li class="">
-						<a href="#">
-							<i class="bx bx-log-out icon"></i>
-							<span class="text nav-text">Logout</span>
-						</a>
-					</li>
-
-					<li class="mode">
-						<div class="sun-moon">
-							<i class="bx bx-moon icon moon"></i>
-							<i class="bx bx-sun icon sun"></i>
+			</nav>
+			<main>
+				<div class="control-center-item" id="manageStaff">
+					<div class="staff-content">
+						<div class="header">
+							<h2>Manage staff accounts</h2>
 						</div>
-						<span class="mode-text text">Dark mode</span>
-
-						<div class="toggle-switch">
-							<span class="switch"></span>
+					</div>
+					<div class="top">
+						<div class="search-container">
+							<i class="bx bx-search"></i>
+							<input
+								type="text"
+								class="search-staff"
+								placeholder="Start typing a name"
+							/>
 						</div>
-					</li>
+						<div class="my-btn pry-btn">
+							<a
+								href="#"
+								data-bs-toggle="modal"
+								data-bs-target="#newStaffModal"
+							></a>
+							<i class="bx bx-plus"></i>
+							<span>Create new staff</span>
+						</div>
+					</div>
+					<div class="staff-list-container">
+						<h3>Staff list</h3>
+						<div class="staff-list"></div>
+						<div class="error-message" style="display: none">
+							Sorry, we couldn't find the name you entered. Please double-check
+							the entered name. You can create a new account using the Add New
+							Staff button above.
+						</div>
+					</div>
 				</div>
-			</div>
-		</nav>
-
-		<section class="home">
-			<div class="text heading">Dashboard</div>
-
-			<div class="main-content-container">
-				<h2 class="main-content-heading">Dashboard</h2>
-				<div class="main-content">
-					This is your staff centre. Here you will find all information about
-					the teachers. Some information like contact information would be
-					available only to administrators (like proprietors/principal etc.).
-					Part of the information like the picture of the staff, their name and
-					post will be displayed on the public section of the site
+				<!-- Staff details Modal -->
+				<div
+					class="modal fade"
+					id="staffModal"
+					tabindex="-1"
+					aria-labelledby="staffModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="staffModalLabel">Staff Details</h5>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">
+								<!-- Staff details will be displayed here -->
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-danger deactivate-btn"
+									>Deactivate</button
+								>
+								<button class="btn btn-primary activate-btn">Activate</button>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
+				<!-- create new staff account modal -->
+				<div
+					class="modal fade add-staff-modal"
+					id="newStaffModal"
+					tabindex="-1"
+					aria-labelledby="newStaffModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="newStaffModalLabel"
+									>Staff Details</h5
+								>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body" id="newStaffModalBody">
+								<form action="post" class="new-staff">
+									<form-field>
+										<form-field>
+											<div>
+												<div class="form-group">
+													<div class="control-details">
+														<label for="selectSex">
+															Gender<span>&#42;</span>
+														</label>
+														<select class="form-select" id="selectSex" required>
+															<option value="">Select gender</option>
+															<option value="1"> Female </option>
+															<option value="2"> Male </option>
+														</select>
+													</div>
+													<div class="staff-names form-group">
+														<label for="newFirstName">
+															First name<span>&#42;</span>
+														</label>
+														<input
+															class="form-control"
+															type="text"
+															id="newFirstName"
+															placeholder="Enter first name"
+															required
+														/>
+													</div>
+													<div class="staff-names form-group">
+														<label for="newLastName">
+															Last name<span>&#42;</span>
+														</label>
+														<input
+															class="form-control"
+															type="text"
+															id="newLastName"
+															placeholder="Enter Last name"
+															required
+														/>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="account-details">
+														<label for="newPhoneNumber">
+															Phone number<span>&#42;</span>
+														</label>
+														<input
+															class="form-control"
+															type="tel"
+															id="newPhoneNumber"
+															placeholder="6xx xxx xx1"
+															required
+														/>
+													</div>
+													<div class="account-details">
+														<label for="newEmail">Email</label>
+														<input
+															class="form-control"
+															type="email"
+															id="newEmail"
+														/>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="control-details">
+														<label for="selectAccessLevel">
+															Access level<span>&#42;</span>
+														</label>
+														<select
+															class="form-select"
+															id="selectAccessLevel"
+															required
+														>
+															<option value="">Select access level</option>
+															<option value="1">
+																Level 1 (Admin access)
+															</option>
+															<option value="2">
+																Level 2 (Standard access)
+															</option>
+														</select>
+													</div>
+													<div class="control-details">
+														<label for="selectAccessLevel">
+															Subjects<span>&#42;</span>
+														</label>
+														<select
+															class="form-select"
+															id="selectSubject"
+															required
+														>
+															<option value="">Select subjects</option>
+															<option value="1"> Biology </option>
+															<option value="2"> Human Biology </option>
+															<option value="3"> Mathematics </option>
+															<option value="4">
+																Additional Mathematics
+															</option>
+															<option value="5"> Food and Nutrition </option>
+															<option value="4"> French </option>
+															<option value="4"> English language </option>
+															<option value="4"> Literature in English </option>
+														</select>
+													</div>
+													<div class="control-details">
+														<label for="enterPosition">Position</label>
+														<input
+															class="form-control"
+															type="email"
+															id="enterPosition"
+														/>
+													</div>
+												</div>
+											</div>
+										</form-field>
+									</form-field>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<div class="cancel-btn my-btn">
+									<a href="#" data-bs-dismiss="modal"></a>
+									<span>Cancel</span>
+								</div>
+								<div class="my-btn pry-btn">
+									<a href="#" data-bs-dismiss="modal"></a>
+									<span>Create</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
 
-		<script src="/scripts/index.js"></script>
+		<!-- bootstrap js files -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- custom js files -->
+		<!-- <script src="/scripts/index.js"></script>
+		<script src="/scripts/admin-center.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="scripts/manage-staff.js"></script>
+		<script src="scripts/class.js"></script>
+		<script src="scripts/students.js"></script>
+		<script src="scripts/calendar.js"></script>
+		<script src="scripts/create.js"></script>
 	</body>
 </html>
