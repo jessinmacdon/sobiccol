@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title> SOBICCOL | Manage staff profile </title>
+
+		<!-- bootstrap -->
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<!-- google icons -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+		/>
+
+		<!-- CSS  -->
+		<link rel="stylesheet" href="styles/styles.css" />
+
+		<!-- Icons from Boxicons CSS  -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="dashboard-container">
+			<header>
+				<nav class="sidebar">
+					<!-- Takes the user back to the dashboard -->
+					<div class="back-button">
+						<a href="control-center.html"></a>
+						<i class="bx bx-arrow-back"></i>
+					</div>
+					<div class="logo-container">
+						<img src="/assets/logo/logo.jpg" alt="school logo" />
+					</div>
+					<div class="menu-bar">
+						<div class="menu">
+							<ul class="menu-links nav nav-tabs" role="tablist">
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										data-bs-toggle="tab"
+										href="control-center.html#manageAdminProfile"
+									></a>
+									<i class="bx bx-home-alt icon"></i>
+									<span class="nav-text">My account</span>
+								</li>
+
+								<li class="nav-item">
+									<a href="#manageStaff" class="nav-link"></a>
+									<i class="bx bxs-chalkboard icon"></i>
+									<span class="nav-text">Staff</span>
+								</li>
+								<li class="nav-item">
+									<a
+										href="control-center.html#manageClasses"
+										class="nav-link"
+									></a>
+									<i class="bx bxs-school icon"></i>
+									<span class="nav-text">Classes</span>
+								</li>
+
+								<li class="nav-item">
+									<a href="student-center.html" class="nav-link"></a>
+									<span class="material-symbols-outlined icon">
+										person_raised_hand
+									</span>
+									<span class="nav-text">Students</span>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="control-center.html#manageCalendar"
+										class="nav-link"
+										data-bs-toggle="tab"
+									></a>
+									<i class="bx bxs-calendar icon"></i>
+									<span class="nav-text">Calendar</span>
+								</li>
+							</ul>
+							<ul class="bottom-content">
+								<li class="">
+									<a href="#"></a>
+									<i class="bx bx-log-out icon"></i>
+									<span class="nav-text">Logout</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<div class="top">
+					<h2 class="student-name"></h2>
+					<div class="btn-container">
+						<button class="btn btn-primary print-id-btn">Print ID</button>
+						<div class="results-link-container pry-btn">
+							<a href="#"></a>
+							<span>View results</span>
+						</div>
+					</div>
+				</div>
+				<div class="student-info">
+					<!-- Student details will be displayed here -->
+				</div>
+				<div class="remarks-container">
+					<p><strong>Remarks:</strong></p>
+					<ul class="remarks-list">
+						<!-- Remarks will be added dynamically here -->
+					</ul>
+					<div class="update-fields">
+						<textarea
+							id="remarks"
+							class="form-control"
+							rows="3"
+							placeholder="Add remark..."
+						></textarea>
+						<a href="#" class="update-field" data-field="remarks"
+							>Save Remark</a
+						>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- bootstrap js files -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- custom js files -->
+		<!-- <script src="/scripts/index.js"></script>
+		<script src="/scripts/admin-center.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<!-- <script src="scripts/manage-staff.js"></script> -->
+		<!-- <script src="scripts/view-staff.js"></script> -->
+		<!-- <script src="scripts/class.js"></script> -->
+		<!-- <script src="scripts/students.js"></script> -->
+		<script src="scripts/view-student.js"></script>
+		<!-- <script src="scripts/calendar.js"></script>
+		<script src="scripts/create.js"></script> -->
+	</body>
+</html>

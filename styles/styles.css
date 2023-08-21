@@ -121,9 +121,21 @@ ul {
 
 /* main-container settings */
 .dashboard-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25vw 75vw;
 }
 
+.logo-container {
+  width: 100%;
+  height: 250px;
+}
+
+.logo-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
 /* Sidebar */
 .sidebar {
   position: fixed;
@@ -179,19 +191,6 @@ ul {
   align-items: center;
   justify-content: center;
   font-size: 36px;
-}
-
-header {
-  text-align: center;
-  background-color: white;
-  width: 100%;
-  border-radius: 25% 25% 8% 8% / 0% 0% 6% 6%;
-}
-
-header img {
-  width: 200px;
-  height: 200px;
-  text-align: center;
 }
 
 .sidebar ul li {
@@ -542,6 +541,17 @@ label {
 }
 
 /* styles for the manage staff tab pane in the control center */
+.image-container {
+  height: 300px;
+  width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .staff-list-item {
   cursor: pointer;
 }
