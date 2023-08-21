@@ -1,7 +1,7 @@
 {
 	"students": [
 		{
-			"id":"05092471",
+			"id": "05092471",
 			"first_name": "John",
 			"last_name": "Doe",
 			"branch": "Grammar",
@@ -10,10 +10,15 @@
 			"parent_guardian": "Mary Doe",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud1.jpeg",
-			"remarks": "Excellent student with strong leadership skills."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092472",
+			"id": "05092472",
 			"first_name": "Jane",
 			"last_name": "Smith",
 			"branch": "Commercial",
@@ -22,10 +27,15 @@
 			"parent_guardian": "Michael Smith",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud2.jpeg",
-			"remarks": "Active participant in extracurricular activities."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092473",
+			"id": "05092473",
 			"first_name": "Michael",
 			"last_name": "Johnson",
 			"branch": "Technical",
@@ -34,10 +44,15 @@
 			"parent_guardian": "David Johnson",
 			"enrolment_date": "2021-02-15",
 			"student_image": "assets/student-image/stud3.jpeg",
-			"remarks": "Shows a keen interest in computer programming."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092474",
+			"id": "05092474",
 			"first_name": "Emily",
 			"last_name": "Williams",
 			"branch": "Grammar",
@@ -46,10 +61,15 @@
 			"parent_guardian": "Jennifer Williams",
 			"enrolment_date": "2019-06-10",
 			"student_image": "assets/student-image/stud4.jpeg",
-			"remarks": "Top performer in science subjects."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092475",
+			"id": "05092475",
 			"first_name": "William",
 			"last_name": "Brown",
 			"branch": "Commercial",
@@ -58,10 +78,15 @@
 			"parent_guardian": "Sarah Brown",
 			"enrolment_date": "2019-06-10",
 			"student_image": "assets/student-image/stud5.jpeg",
-			"remarks": "Exceptional communication skills."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092476",
+			"id": "05092476",
 			"first_name": "Olivia",
 			"last_name": "Jones",
 			"branch": "Grammar",
@@ -70,10 +95,15 @@
 			"parent_guardian": "Daniel Jones",
 			"enrolment_date": "2020-03-22",
 			"student_image": "assets/student-image/stud6.jpeg",
-			"remarks": "Talented artist and musician."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092477",
+			"id": "05092477",
 			"first_name": "James",
 			"last_name": "Garcia",
 			"branch": "Technical",
@@ -82,10 +112,15 @@
 			"parent_guardian": "Maria Garcia",
 			"enrolment_date": "2021-09-03",
 			"student_image": "assets/student-image/stud7.jpeg",
-			"remarks": "Active member of the robotics club."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092478",
+			"id": "05092478",
 			"first_name": "Sophia",
 			"last_name": "Miller",
 			"branch": "Commercial",
@@ -94,10 +129,15 @@
 			"parent_guardian": "Thomas Miller",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud8.jpeg",
-			"remarks": "Participates enthusiastically in sports."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092479",
+			"id": "05092479",
 			"first_name": "Benjamin",
 			"last_name": "Davis",
 			"branch": "Grammar",
@@ -106,10 +146,15 @@
 			"parent_guardian": "Jessica Davis",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud9.jpeg",
-			"remarks": "Shows curiosity and aptitude for science."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092480",
+			"id": "05092480",
 			"first_name": "Ava",
 			"last_name": "Rodriguez",
 			"branch": "Technical",
@@ -118,10 +163,15 @@
 			"parent_guardian": "Carlos Rodriguez",
 			"enrolment_date": "2021-02-15",
 			"student_image": "assets/student-image/stud10.jpeg",
-			"remarks": "Exceptional problem-solving skills."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092481",
+			"id": "05092481",
 			"first_name": "Jacob",
 			"last_name": "Martinez",
 			"branch": "Commercial",
@@ -130,10 +180,15 @@
 			"parent_guardian": "Laura Martinez",
 			"enrolment_date": "2019-06-10",
 			"student_image": "assets/student-image/stud10.jpeg",
-			"remarks": "Passionate about mathematics."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092482",
+			"id": "05092482",
 			"first_name": "Mia",
 			"last_name": "Hernandez",
 			"branch": "Grammar",
@@ -142,10 +197,15 @@
 			"parent_guardian": "Daniel Hernandez",
 			"enrolment_date": "2019-06-10",
 			"student_image": "assets/student-image/stud2.jpeg",
-			"remarks": "Active participant in debate competitions."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092483",
+			"id": "05092483",
 			"first_name": "Ethan",
 			"last_name": "Lopez",
 			"branch": "Technical",
@@ -154,10 +214,15 @@
 			"parent_guardian": "Maria Lopez",
 			"enrolment_date": "2020-03-22",
 			"student_image": "assets/student-image/stud3.jpeg",
-			"remarks": "Enthusiastic about photography and filmmaking."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092484",
+			"id": "05092484",
 			"first_name": "Isabella",
 			"last_name": "Gonzalez",
 			"branch": "Commercial",
@@ -166,10 +231,15 @@
 			"parent_guardian": "Juan Gonzalez",
 			"enrolment_date": "2021-09-03",
 			"student_image": "assets/student-image/stud4.jpeg",
-			"remarks": "Active in volunteering for community projects."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092485",
+			"id": "05092485",
 			"first_name": "Alexander",
 			"last_name": "Wilson",
 			"branch": "Grammar",
@@ -178,10 +248,15 @@
 			"parent_guardian": "Karen Wilson",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud5.jpeg",
-			"remarks": "Has a natural aptitude for languages."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092486",
+			"id": "05092486",
 			"first_name": "Emma",
 			"last_name": "Anderson",
 			"branch": "Technical",
@@ -190,10 +265,15 @@
 			"parent_guardian": "Brian Anderson",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud6.jpeg",
-			"remarks": "Shows curiosity in technology and gadgets."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092487",
+			"id": "05092487",
 			"first_name": "Michael",
 			"last_name": "Thomas",
 			"branch": "Commercial",
@@ -202,10 +282,15 @@
 			"parent_guardian": "Jennifer Thomas",
 			"enrolment_date": "2021-02-15",
 			"student_image": "assets/student-image/stud7.jpeg",
-			"remarks": "Active member of the school's drama club."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092488",
+			"id": "05092488",
 			"first_name": "Olivia",
 			"last_name": "Jackson",
 			"branch": "Grammar",
@@ -214,10 +299,15 @@
 			"parent_guardian": "Richard Jackson",
 			"enrolment_date": "2019-06-10",
 			"student_image": "assets/student-image/stud8.jpeg",
-			"remarks": "Participates in various science competitions."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092489",
+			"id": "05092489",
 			"first_name": "William",
 			"last_name": "White",
 			"branch": "Commercial",
@@ -226,10 +316,15 @@
 			"parent_guardian": "Elizabeth White",
 			"enrolment_date": "2019-06-10",
 			"student_image": "assets/student-image/stud9.jpeg",
-			"remarks": "Exceptional skills in financial management."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"050924790",
+			"id": "050924790",
 			"first_name": "Sophia",
 			"last_name": "Taylor",
 			"branch": "Grammar",
@@ -238,10 +333,15 @@
 			"parent_guardian": "Robert Taylor",
 			"enrolment_date": "2020-03-22",
 			"student_image": "assets/student-image/stud1.jpeg",
-			"remarks": "Passionate about theater and literature."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092491",
+			"id": "05092491",
 			"first_name": "Daniel",
 			"last_name": "Harris",
 			"branch": "Technical",
@@ -250,10 +350,15 @@
 			"parent_guardian": "Jennifer Harris",
 			"enrolment_date": "2021-09-03",
 			"student_image": "assets/student-image/stud2.jpeg",
-			"remarks": "Active participant in robotics competitions."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092492",
+			"id": "05092492",
 			"first_name": "Ava",
 			"last_name": "Martin",
 			"branch": "Commercial",
@@ -262,10 +367,15 @@
 			"parent_guardian": "David Martin",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud2.jpeg",
-			"remarks": "Exemplary leadership skills."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092493",
+			"id": "05092493",
 			"first_name": "Alexander",
 			"last_name": "Thompson",
 			"branch": "Grammar",
@@ -274,10 +384,15 @@
 			"parent_guardian": "Karen Thompson",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud3.jpeg",
-			"remarks": "Active participant in literary events."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092494",
+			"id": "05092494",
 			"first_name": "Emily",
 			"last_name": "Adams",
 			"branch": "Technical",
@@ -286,10 +401,15 @@
 			"parent_guardian": "Mark Adams",
 			"enrolment_date": "2021-02-15",
 			"student_image": "assets/student-image/stud4.jpeg",
-			"remarks": "Innovative thinker and problem solver."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092495",
+			"id": "05092495",
 			"first_name": "Joseph",
 			"last_name": "Robinson",
 			"branch": "Commercial",
@@ -298,10 +418,15 @@
 			"parent_guardian": "Laura Robinson",
 			"enrolment_date": "2019-06-10",
 			"student_image": "assets/student-image/stud5.jpeg",
-			"remarks": "Dedicated to environmental conservation."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092496",
+			"id": "05092496",
 			"first_name": "Grace",
 			"last_name": "Clark",
 			"branch": "Grammar",
@@ -310,10 +435,15 @@
 			"parent_guardian": "William Clark",
 			"enrolment_date": "2019-06-10",
 			"student_image": "assets/student-image/stud6.jpeg",
-			"remarks": "Exceptional debating skills."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092497",
+			"id": "05092497",
 			"first_name": "James",
 			"last_name": "Walker",
 			"branch": "Technical",
@@ -322,10 +452,15 @@
 			"parent_guardian": "Michael Walker",
 			"enrolment_date": "2020-03-22",
 			"student_image": "assets/student-image/stud7.jpeg",
-			"remarks": "Enthusiastic musician and performer."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092498",
+			"id": "05092498",
 			"first_name": "Chloe",
 			"last_name": "Young",
 			"branch": "Commercial",
@@ -334,10 +469,15 @@
 			"parent_guardian": "Lisa Young",
 			"enrolment_date": "2021-09-03",
 			"student_image": "assets/student-image/stud8.jpeg",
-			"remarks": "Exceptional communication skills."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092499",
+			"id": "05092499",
 			"first_name": "Benjamin",
 			"last_name": "Hall",
 			"branch": "Grammar",
@@ -346,10 +486,15 @@
 			"parent_guardian": "John Hall",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud9.jpeg",
-			"remarks": "Passionate about history and culture."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		},
 		{
-			"id":"05092400",
+			"id": "05092400",
 			"first_name": "Lily",
 			"last_name": "Allen",
 			"branch": "Technical",
@@ -358,7 +503,12 @@
 			"parent_guardian": "Sarah Allen",
 			"enrolment_date": "2020-09-01",
 			"student_image": "assets/student-image/stud10.jpeg",
-			"remarks": "Active participant in coding competitions."
+			"remarks": [
+				{
+					"date": "2023-08-20T12:34:56.789Z",
+					"text": "Excellent student with strong leadership skills."
+				}
+			]
 		}
 	]
 }
