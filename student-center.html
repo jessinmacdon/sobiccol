@@ -207,6 +207,16 @@
 							<div class="modal-body" id="newStudModalBody">
 								<form action="post" class="new-stud">
 									<div class="form-group">
+										<div class="account-details">
+											<label for="studSex" class="form-label"
+												>Sex<span>&#42;</span>
+											</label>
+											<select class="form-select" id="studSex" required>
+												<option value="" selected>Select sex</option>
+												<option value="1">Male</option>
+												<option value="2">Female</option>
+											</select>
+										</div>
 										<div class="stud-names">
 											<label for="studFirstName" class="form-label">
 												First name<span>&#42;</span>
@@ -231,8 +241,6 @@
 												required
 											/>
 										</div>
-									</div>
-									<div class="form-group">
 										<div class="account-details">
 											<label for="studPhoneNumber" class="form-label">
 												Date of birth<span>&#42;</span>
@@ -244,24 +252,29 @@
 												required
 											/>
 										</div>
-										<div class="account-details">
-											<label for="studSex" class="form-label"
-												>Sex<span>&#42;</span>
-											</label>
-											<select class="form-select" id="studSex" required>
-												<option value="" selected>Select sex</option>
-												<option value="1">Male</option>
-												<option value="2">Female</option>
-											</select>
-										</div>
+									</div>
+									<div class="form-group">
 										<div class="account-details">
 											<label for="parentName" class="form-label">
-												Parent/Guardian<span>&#42;</span>
+												Emergency contact person<span>&#42;</span>
 											</label>
 											<input
 												class="form-control"
 												type="text"
 												id="parentName"
+												placeholder="Enter the mergency contact's name"
+												required
+											/>
+										</div>
+										<div class="account-details">
+											<label for="parentContact" class="form-label">
+												Emergency contact<span>&#42;</span>
+											</label>
+											<input
+												class="form-control"
+												type="tel"
+												id="parentContact"
+												placeholder="6 xxxx xxxx"
 												required
 											/>
 										</div>
@@ -294,6 +307,14 @@
 													style="display: none"
 												></div>
 											</div>
+										</div>
+										<div class="student-picture">
+											<label for="addStudImage"></label>
+											<div class="add-new-image" id="addStudImage">
+												Add student's picture
+												<span><a href="#">Click here to add an image</a></span>
+											</div>
+											<img src="#" alt="Student image preview" />
 										</div>
 									</div>
 								</form>

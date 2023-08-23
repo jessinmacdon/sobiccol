@@ -1,0 +1,38 @@
+{
+	"position": {
+		"staff": [
+			"Principal",
+			"Vice Principal 1",
+			"Vice Principal 2",
+			"Discipline Master 1",
+			"Discipline Master 2",
+			"Health Master",
+			"Socials Master",
+			"Sports Master",
+			"Head of Department",
+			"Counsellor",
+			"Invigilator",
+			"Chaplain",
+			"Head of Admissions",
+			"Bursar",
+			"Secretory"
+		],
+		"student": [
+			"Senior Prefect Boy",
+			"Senior Prefect Girl",
+			"Assistant Senior Prefect Boy",
+			"Assistant Senior Prefect Girl",
+			"Health Prefect",
+			"Sanitations Prefect",
+			"Labour Prefect",
+			"Food Prefect",
+			"Utility Prefect",
+			"Social Prefect",
+			"Sports Prefect",
+			"Science Prefect",
+			"Journalism Prefect",
+			"Class Prefect Boy",
+			"Class Prefect Girl"
+		]
+	}
+}

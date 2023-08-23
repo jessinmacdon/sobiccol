@@ -67,10 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <a href="#" class="update-field" data-field="adminRole">Update</a>
                                 </div>
                                 <div class="form-group">
-                                    <label for="subjects">Subjects:</label>
-                                    <input type="text" id="subjects" class="form-control" value="${clickedStaff.subjects.join(
-																			", "
-																		)}" disabled />
+                                    <label for="subjects"></label>
+                                    <p id="subjects"><strong>Subjects:</strong>${clickedStaff.subjects}</p>
                                     <a href="#" class="update-field" data-field="subjects">Update</a>
                                 </div>
                             </form>

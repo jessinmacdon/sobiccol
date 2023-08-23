@@ -136,6 +136,7 @@ ul {
   object-fit: cover;
 
 }
+
 /* Sidebar */
 .sidebar {
   position: fixed;
@@ -556,6 +557,11 @@ label {
   cursor: pointer;
 }
 
+.expanded {
+  position: relative;
+  z-index: 1;
+}
+
 .modal-content.active-status .modal-body p strong {
   color: green;
 }
@@ -578,6 +584,8 @@ label {
   height: 500px;
   object-fit: contain;
 }
+
+
 
 /* styles for class tab pane */
 .class-table {

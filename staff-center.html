@@ -39,8 +39,8 @@
 					<i class="bx bx-arrow-back"></i>
 				</div>
 				<div class="logo-container">
-						<img src="/assets/logo/logo.jpg" alt="school logo" />
-					</div>
+					<img src="/assets/logo/logo.jpg" alt="school logo" />
+				</div>
 
 				<div class="menu-bar">
 					<div class="menu">
@@ -190,7 +190,7 @@
 									<form-field>
 										<form-field>
 											<div>
-												<div class="form-group">
+												<div class="form-group personal-details">
 													<div class="control-details">
 														<label for="selectSex">
 															Gender<span>&#42;</span>
@@ -226,8 +226,8 @@
 														/>
 													</div>
 												</div>
-												<div class="form-group">
-													<div class="account-details">
+												<div class="form-group account-details">
+													<div>
 														<label for="newPhoneNumber">
 															Phone number<span>&#42;</span>
 														</label>
@@ -239,7 +239,7 @@
 															required
 														/>
 													</div>
-													<div class="account-details">
+													<div>
 														<label for="newEmail">Email</label>
 														<input
 															class="form-control"
@@ -247,8 +247,6 @@
 															id="newEmail"
 														/>
 													</div>
-												</div>
-												<div class="form-group">
 													<div class="control-details">
 														<label for="selectAccessLevel">
 															Access level<span>&#42;</span>
@@ -267,35 +265,38 @@
 															</option>
 														</select>
 													</div>
+												</div>
+												<div class="form-group">
 													<div class="control-details">
-														<label for="selectAccessLevel">
+														<label for="subjectSelectField">
 															Subjects<span>&#42;</span>
 														</label>
-														<select
-															class="form-select"
-															id="selectSubject"
-															required
-														>
-															<option value="">Select subjects</option>
-															<option value="1"> Biology </option>
-															<option value="2"> Human Biology </option>
-															<option value="3"> Mathematics </option>
-															<option value="4">
-																Additional Mathematics
-															</option>
-															<option value="5"> Food and Nutrition </option>
-															<option value="4"> French </option>
-															<option value="4"> English language </option>
-															<option value="4"> Literature in English </option>
-														</select>
+														<div class="select-subject-container">
+															<select id="subjectSelectField">
+																<!-- options will be added dynamically from subjects.json -->
+															</select>
+															<input
+																type="text"
+																id="subjectSearchInput"
+																placeholder="Start typing subject.."
+															/>
+														</div>
+														<ul id="selectedSubjectsList"></ul>
 													</div>
 													<div class="control-details">
-														<label for="enterPosition">Position</label>
-														<input
-															class="form-control"
-															type="email"
-															id="enterPosition"
-														/>
+														<label for="positionSelectField">Position</label>
+														<div class="select-position-container">
+															<select id="positionSelectField">
+																<!-- options will be added dynamically from positions.json -->
+															</select>
+															<input
+																type="text"
+																id="positionSearchInput"
+																placeholder="Start typing position."
+																class="form-control"
+															/>
+														</div>
+														<ul id="selectedPositionsList"></ul>
 													</div>
 												</div>
 											</div>
@@ -341,7 +342,8 @@
 		<script src="/scripts/admin-center.js"></script> -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="scripts/manage-staff.js"></script>
-		<!-- <script src="scripts/class.js"></script>
+		<script src="scripts/dynamic-selects.js"></script>
+		<!-- 
 		<script src="scripts/students.js"></script>
 		<script src="scripts/calendar.js"></script>
 		<script src="scripts/create.js"></script> -->

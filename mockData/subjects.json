@@ -1,0 +1,234 @@
+{
+	"subjects": {
+		"first cycle": [
+			{
+				"name": "Mathematics",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "English Language",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "French",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Biology",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Chemistry",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Physics",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "History",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Economics",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Geography",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Literature in English",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Citizenship Education",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Computer science",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Additional Mathematics",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Human Biology",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Commerce",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Geology",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Logic",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Food and Nutrition",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Special Bilingual French",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Accounting",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Religious Studies",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Physical Education/Sports",
+				"coefficient": "1"
+			},
+			{
+				"name": "Manual Labour",
+				"coefficient": "1"
+			}
+		],
+		"second cycle": [
+			{
+				"name": "HS English Language",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS French",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Biology",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Chemistry",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Physics",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS History",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Economics",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Geography",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Literature in English",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+
+			{
+				"name": "HS Computer science",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+
+			{
+				"name": "HS Geology",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+
+			{
+				"name": "HS Special Bilingual French",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Accounting",
+				"coefficient": "3",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Religious Studies",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "HS Physical Education/Sports",
+				"coefficient": "1",
+				"coefficient exam class": "1"
+			},
+			{
+				"name": "HS Manual Labour",
+				"coefficient": "1",
+				"coefficient exam class": "1"
+			},
+			{
+				"name": "Mathematics with Statistics",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Mathematics with Mechanics",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Information and Communication Technology",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Further Mathematics",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Food science and Nutrition",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+			{
+				"name": "Philosophy",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			}
+		]
+	}
+}
