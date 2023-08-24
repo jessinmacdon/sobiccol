@@ -145,15 +145,11 @@ document.addEventListener("DOMContentLoaded", async function () {
 		resetInput(positionsSelect, positionSearchInput);
 	}
 
-	// Set up listeners for subjects and positions
-	setupRemoveListener(selectedSubjectsList, subjectsSelect);
-	setupRemoveListener(selectedPositionsList, positionsSelect);
-
 	// Setup search listener for subjects
 	setupSearchListener(
 		subjectSearchInput,
 		subjectsSelect,
-		subjectsData.subjects["first cycle"],
+		allSubjects,
 		addSelectedSubject,
 		selectedSubjectsList
 	);
@@ -166,6 +162,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 		addSelectedPosition,
 		selectedPositionsList
 	);
+
+	// Set up listeners for subjects and positions
+	setupRemoveListener(selectedSubjectsList, subjectsSelect);
+	setupRemoveListener(selectedPositionsList, positionsSelect);
 
 	// Function to handle search for subjects
 	function setupSearchListener(
