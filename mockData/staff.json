@@ -35,16 +35,16 @@
 		},
 		{
 			"title": "Dr.",
-			"firstName": "Michael",
-			"lastName": "Johnson",
-			"sex": "Male",
-			"phoneNumber": "+237 6XX XX XX 03",
-			"administrativeRole": "Dean of Studies",
+			"first_name": "Michael",
+			"last_name": "Johnson",
+			"gender": "Male",
+			"phone_number": "+237 6XX XX XX 03",
+			"position": ["Dean of Studies"],
 			"subjects": ["Physics", "Chemistry", "Electromagnetism"],
 			"accountCreatedOn": "2023-06-19",
-			"accessLevel": "Standard",
+			"access_level": "Standard",
 			"image": "staff6.jpeg",
-			"accountStatus": "Active",
+			"account_status": "Active",
 			"id": 24567333
 		},
 		{
