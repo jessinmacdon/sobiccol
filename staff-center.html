@@ -192,13 +192,13 @@
 											<div>
 												<div class="form-group personal-details">
 													<div class="control-details">
-														<label for="selectSex">
+														<label for="selectGender">
 															Gender<span>&#42;</span>
 														</label>
-														<select class="form-select" id="selectSex" required>
+														<select class="form-select" id="selectGender" required>
 															<option value="">Select gender</option>
-															<option value="1"> Female </option>
-															<option value="2"> Male </option>
+															<option value="male"> Male </option>
+															<option value="female"> Female </option>
 														</select>
 													</div>
 													<div class="staff-names form-group">
@@ -257,10 +257,10 @@
 															required
 														>
 															<option value="">Select access level</option>
-															<option value="1">
+															<option value="Admin">
 																Level 1 (Admin access)
 															</option>
-															<option value="2">
+															<option value="Standard">
 																Level 2 (Standard access)
 															</option>
 														</select>
@@ -309,6 +309,7 @@
 									<a href="#" data-bs-dismiss="modal"></a>
 									<span>Cancel</span>
 								</div>
+								<button class="my-btn pry-btn" id="create-account">Create</button>
 								<div class="my-btn pry-btn">
 									<a href="#" data-bs-dismiss="modal"></a>
 									<span>Create</span>
@@ -342,7 +343,7 @@
 		<script src="/scripts/admin-center.js"></script> -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="scripts/manage-staff.js"></script>
-		<script src="scripts/dynamic-selects.js"></script>
+		<!-- <script src="scripts/dynamic-selects.js"></script> -->
 		<!-- 
 		<script src="scripts/students.js"></script>
 		<script src="scripts/calendar.js"></script>
