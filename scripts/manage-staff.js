@@ -375,6 +375,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 				// Hide the loader after the timeout
 				setTimeout(() => {
+					const loader = document.getElementById("loadingMessage");
+					const successMessage = document.getElementById("successMessage");
+					const errorMessage = document.getElementById("failedMessage");
 					// Hide the loader
 					loader.style.display = "none";
 
@@ -389,7 +392,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 				}, 3000); // 3-second timeout
 
 				// Clear the form fields and selected items
-				document.getElementById("selectSex").value = "";
+				document.getElementById("selectGender").value = "";
 				document.getElementById("newFirstName").value = "";
 				document.getElementById("newLastName").value = "";
 				document.getElementById("newPhoneNumber").value = "";

@@ -656,6 +656,22 @@ label {
   object-fit: contain;
 }
 
+/* New code block Aug27 */
+
+button {
+  border: none;
+}
+
+#successMessage {
+  display: none;
+}
+
+#failedMessage {
+  display: none;
+}
+
+/* end of new code block Aug27 */
+
 /* styles for responsive layout */
 @media screen and (max-width: 767px) {
 

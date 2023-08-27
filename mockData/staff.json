@@ -1,429 +1,551 @@
 {
-	"staff": [
-		{
-			"title": "Mr.",
-			"first_name": "John",
-			"last_name": "Doe",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 01",
-			"position": ["Principal"],
-			"subjects": [
-				"Mathematics",
-				"Statistics",
-				"Mechanics",
-				"Additional Mathematics"
-			],
-			"accountCreatedOn": "2023-06-17",
-			"access_level": "Admin",
-			"image": "staff8.jpeg",
-			"account_status": "Active",
-			"id": 24567331
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Jane",
-			"last_name": "Smith",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 02",
-			"position": ["Student Counsellor"],
-			"subjects": ["Biology", "Human Biology", "Cytology"],
-			"accountCreatedOn": "2023-06-18",
-			"access_level": "Standard",
-			"image": "staff7.jpeg",
-			"account_status": "Active",
-			"id": 24567332
-		},
-		{
-			"title": "Dr.",
-			"first_name": "Michael",
-			"last_name": "Johnson",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 03",
-			"position": ["Dean of Studies"],
-			"subjects": ["Physics", "Chemistry", "Electromagnetism"],
-			"accountCreatedOn": "2023-06-19",
-			"access_level": "Standard",
-			"image": "staff6.jpeg",
-			"account_status": "Active",
-			"id": 24567333
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Emily",
-			"last_name": "Brown",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 04",
-			"position": ["Discipline Master"],
-			"subjects": ["History", "World History", "Cameroon History"],
-			"accountCreatedOn": "2023-06-20",
-			"access_level": "Admin",
-			"image": "staff5.jpeg",
-			"account_status": "Active",
-			"id": 24567334
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Daniel",
-			"last_name": "Wilson",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 05",
-			"position": ["Sports Master"],
-			"subjects": ["Physical Education", "Sports Science"],
-			"accountCreatedOn": "2023-06-21",
-			"access_level": "Standard",
-			"image": "staff4.jpeg",
-			"account_status": "Inactive",
-			"id": 24567335
-		},
-		{
-			"title": "Ms.",
-			"first_name": "Jessica",
-			"last_name": "Davis",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 06",
-			"position": ["Health Master"],
-			"subjects": ["Health Education", "Nutrition"],
-			"accountCreatedOn": "2023-06-22",
-			"access_level": "Standard",
-			"image": "staff3.jpeg",
-			"account_status": "Active",
-			"id": 24567336
-		},
-		{
-			"title": "Mr.",
-			"first_name": "David",
-			"last_name": "Miller",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 07",
-			"position": ["Chaplain"],
-			"subjects": ["Religious Studies", "Ethics"],
-			"accountCreatedOn": "2023-06-23",
-			"access_level": "Standard",
-			"image": "staff2.jpeg",
-			"account_status": "Active",
-			"id": 24567337
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Sarah",
-			"last_name": "Anderson",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 08",
-			"position": ["Librarian"],
-			"subjects": ["Library Science"],
-			"accountCreatedOn": "2023-06-24",
-			"access_level": "Standard",
-			"image": "staff1.jpeg",
-			"account_status": "Active",
-			"id": 24567338
-		},
-		{
-			"title": "Mr.",
-			"first_name": "James",
-			"last_name": "Thomas",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 09",
-			"position": ["Academic Coordinator"],
-			"subjects": ["English", "English Literature"],
-			"accountCreatedOn": "2023-06-25",
-			"access_level": "Standard",
-			"image": "staff10.jpeg",
-			"account_status": "Inactive",
-			"id": 24567339
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Rebecca",
-			"last_name": "Moore",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 10",
-			"position": ["Science Coordinator"],
-			"subjects": ["Biology", "Chemistry", "Physics"],
-			"accountCreatedOn": "2023-06-26",
-			"access_level": "Standard",
-			"image": "staff9.jpeg",
-			"account_status": "Active",
-			"id": 24567340
-		},
-		{
-			"title": "Mr.",
-			"first_name": "William",
-			"last_name": "Taylor",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 11",
-			"position": ["Humanities Coordinator"],
-			"subjects": ["History", "Geography"],
-			"accountCreatedOn": "2023-06-27",
-			"access_level": "Standard",
-			"image": "staff8.jpeg",
-			"account_status": "Active",
-			"id": 24567341
-		},
-		{
-			"title": "Ms.",
-			"first_name": "Olivia",
-			"last_name": "Johnson",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 12",
-			"position": ["Languages Coordinator"],
-			"subjects": ["French", "Spanish"],
-			"accountCreatedOn": "2023-06-28",
-			"access_level": "Standard",
-			"image": "staff7.jpeg",
-			"account_status": "Inactive",
-			"id": 24567342
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Daniel",
-			"last_name": "Brown",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 13",
-			"position": ["IT Coordinator"],
-			"subjects": ["Computer Science"],
-			"accountCreatedOn": "2023-06-29",
-			"access_level": "Standard",
-			"image": "staff6.jpeg",
-			"account_status": "Active",
-			"id": 24567343
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Sophia",
-			"last_name": "Jones",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 14",
-			"position": ["Arts Coordinator"],
-			"subjects": ["Art", "Music"],
-			"accountCreatedOn": "2023-06-30",
-			"access_level": "Standard",
-			"image": "staff5.jpeg",
-			"account_status": "Active",
-			"id": 24567344
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Matthew",
-			"last_name": "Wilson",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 15",
-			"position": ["Career Advisor"],
-			"subjects": ["Career Development", "Job Placement"],
-			"accountCreatedOn": "2023-07-01",
-			"access_level": "Standard",
-			"image": "staff4.jpeg",
-			"account_status": "Active",
-			"id": 24567345
-		},
-		{
-			"title": "Ms.",
-			"first_name": "Emma",
-			"last_name": "Anderson",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 16",
-			"position": ["Community Relations"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-02",
-			"access_level": "Standard",
-			"image": "staff3.jpeg",
-			"account_status": "Active",
-			"id": 24567346
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Liam",
-			"last_name": "Thompson",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 17",
-			"position": ["Finance Manager"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-03",
-			"access_level": "Standard",
-			"image": "staff2.jpeg",
-			"account_status": "Active",
-			"id": 24567347
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Ava",
-			"last_name": "White",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 18",
-			"position": ["Public Relations"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-04",
-			"access_level": "Standard",
-			"image": "staff1.jpeg",
-			"account_status": "Inactive",
-			"id": 24567348
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Noah",
-			"last_name": "Hall",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 19",
-			"position": ["Transportation Coordinator"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-05",
-			"access_level": "Standard",
-			"image": "staff3.jpeg",
-			"account_status": "Active",
-			"id": 24567349
-		},
-		{
-			"title": "Ms.",
-			"first_name": "Mia",
-			"last_name": "Martinez",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 20",
-			"position": ["Events Coordinator"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-06",
-			"access_level": "Standard",
-			"image": "staff6.jpeg",
-			"account_status": "Active",
-			"id": 24567350
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Oliver",
-			"last_name": "Adams",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 21",
-			"position": ["Facilities Manager"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-07",
-			"access_level": "Standard",
-			"image": "staff4.jpeg",
-			"account_status": "Active",
-			"id": 24567351
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Harper",
-			"last_name": "Hernandez",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 22",
-			"position": ["Admissions Officer"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-08",
-			"access_level": "Standard",
-			"image": "staff5.jpeg",
-			"account_status": "Inactive",
-			"id": 24567352
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Ethan",
-			"last_name": "Garcia",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 23",
-			"position": ["Security Coordinator"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-09",
-			"access_level": "Standard",
-			"image": "staff10.jpeg",
-			"account_status": "Active",
-			"id": 24567353
-		},
-		{
-			"title": "Ms.",
-			"first_name": "Luna",
-			"last_name": "King",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 24",
-			"position": ["Arts and Crafts"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-10",
-			"access_level": "Standard",
-			"image": "staff3.jpeg",
-			"account_status": "Active",
-			"id": 24567354
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Jackson",
-			"last_name": "Wright",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 25",
-			"position": ["Maintenance Supervisor"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-11",
-			"access_level": "Standard",
-			"image": "staff2.jpeg",
-			"account_status": "Active",
-			"id": 24567355
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Chloe",
-			"last_name": "Lopez",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 26",
-			"position": ["Communication Specialist"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-12",
-			"access_level": "Standard",
-			"image": "staff8.jpeg",
-			"account_status": "Active",
-			"id": 24567356
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Lucas",
-			"last_name": "Ramirez",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 27",
-			"position": ["Records Clerk"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-13",
-			"access_level": "Standard",
-			"image": "staff5.jpeg",
-			"account_status": "Inactive",
-			"id": 24567357
-		},
-		{
-			"title": "Ms.",
-			"first_name": "Grace",
-			"last_name": "Scott",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 28",
-			"position": ["Special Needs Coordinator"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-14",
-			"access_level": "Standard",
-			"image": "staff10.jpeg",
-			"account_status": "Active",
-			"id": 24567358
-		},
-		{
-			"title": "Mr.",
-			"first_name": "Leo",
-			"last_name": "Flores",
-			"gender": "Male",
-			"phone_number": "+237 6XX XX XX 29",
-			"position": ["Technology Integrator"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-15",
-			"access_level": "Standard",
-			"image": "staff7.jpeg",
-			"account_status": "Active",
-			"id": 24567359
-		},
-		{
-			"title": "Mrs.",
-			"first_name": "Aria",
-			"last_name": "Perez",
-			"gender": "Female",
-			"phone_number": "+237 6XX XX XX 30",
-			"position": ["Parent Relations"],
-			"subjects": [],
-			"accountCreatedOn": "2023-07-16",
-			"access_level": "Standard",
-			"image": "staff1.jpeg",
-			"account_status": "Active",
-			"id": 24567360
-		}
-	]
+  "staff": [
+    {
+      "title": "Mr.",
+      "first_name": "John",
+      "last_name": "Doe",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 01",
+      "position": [
+        "Principal"
+      ],
+      "subjects": [
+        "Mathematics",
+        "Statistics",
+        "Mechanics",
+        "Additional Mathematics"
+      ],
+      "accountCreatedOn": "2023-06-17",
+      "access_level": "Admin",
+      "image": "staff8.jpeg",
+      "account_status": "Active",
+      "id": 24567331
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 02",
+      "position": [
+        "Student Counsellor"
+      ],
+      "subjects": [
+        "Biology",
+        "Human Biology",
+        "Cytology"
+      ],
+      "accountCreatedOn": "2023-06-18",
+      "access_level": "Standard",
+      "image": "staff7.jpeg",
+      "account_status": "Active",
+      "id": 24567332
+    },
+    {
+      "title": "Dr.",
+      "first_name": "Michael",
+      "last_name": "Johnson",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 03",
+      "position": [
+        "Dean of Studies"
+      ],
+      "subjects": [
+        "Physics",
+        "Chemistry",
+        "Electromagnetism"
+      ],
+      "accountCreatedOn": "2023-06-19",
+      "access_level": "Standard",
+      "image": "staff6.jpeg",
+      "account_status": "Active",
+      "id": 24567333
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Emily",
+      "last_name": "Brown",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 04",
+      "position": [
+        "Discipline Master"
+      ],
+      "subjects": [
+        "History",
+        "World History",
+        "Cameroon History"
+      ],
+      "accountCreatedOn": "2023-06-20",
+      "access_level": "Admin",
+      "image": "staff5.jpeg",
+      "account_status": "Active",
+      "id": 24567334
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Daniel",
+      "last_name": "Wilson",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 05",
+      "position": [
+        "Sports Master"
+      ],
+      "subjects": [
+        "Physical Education",
+        "Sports Science"
+      ],
+      "accountCreatedOn": "2023-06-21",
+      "access_level": "Standard",
+      "image": "staff4.jpeg",
+      "account_status": "Inactive",
+      "id": 24567335
+    },
+    {
+      "title": "Ms.",
+      "first_name": "Jessica",
+      "last_name": "Davis",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 06",
+      "position": [
+        "Health Master"
+      ],
+      "subjects": [
+        "Health Education",
+        "Nutrition"
+      ],
+      "accountCreatedOn": "2023-06-22",
+      "access_level": "Standard",
+      "image": "staff3.jpeg",
+      "account_status": "Active",
+      "id": 24567336
+    },
+    {
+      "title": "Mr.",
+      "first_name": "David",
+      "last_name": "Miller",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 07",
+      "position": [
+        "Chaplain"
+      ],
+      "subjects": [
+        "Religious Studies",
+        "Ethics"
+      ],
+      "accountCreatedOn": "2023-06-23",
+      "access_level": "Standard",
+      "image": "staff2.jpeg",
+      "account_status": "Active",
+      "id": 24567337
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Sarah",
+      "last_name": "Anderson",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 08",
+      "position": [
+        "Librarian"
+      ],
+      "subjects": [
+        "Library Science"
+      ],
+      "accountCreatedOn": "2023-06-24",
+      "access_level": "Standard",
+      "image": "staff1.jpeg",
+      "account_status": "Active",
+      "id": 24567338
+    },
+    {
+      "title": "Mr.",
+      "first_name": "James",
+      "last_name": "Thomas",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 09",
+      "position": [
+        "Academic Coordinator"
+      ],
+      "subjects": [
+        "English",
+        "English Literature"
+      ],
+      "accountCreatedOn": "2023-06-25",
+      "access_level": "Standard",
+      "image": "staff10.jpeg",
+      "account_status": "Inactive",
+      "id": 24567339
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Rebecca",
+      "last_name": "Moore",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 10",
+      "position": [
+        "Science Coordinator"
+      ],
+      "subjects": [
+        "Biology",
+        "Chemistry",
+        "Physics"
+      ],
+      "accountCreatedOn": "2023-06-26",
+      "access_level": "Standard",
+      "image": "staff9.jpeg",
+      "account_status": "Active",
+      "id": 24567340
+    },
+    {
+      "title": "Mr.",
+      "first_name": "William",
+      "last_name": "Taylor",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 11",
+      "position": [
+        "Humanities Coordinator"
+      ],
+      "subjects": [
+        "History",
+        "Geography"
+      ],
+      "accountCreatedOn": "2023-06-27",
+      "access_level": "Standard",
+      "image": "staff8.jpeg",
+      "account_status": "Active",
+      "id": 24567341
+    },
+    {
+      "title": "Ms.",
+      "first_name": "Olivia",
+      "last_name": "Johnson",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 12",
+      "position": [
+        "Languages Coordinator"
+      ],
+      "subjects": [
+        "French",
+        "Spanish"
+      ],
+      "accountCreatedOn": "2023-06-28",
+      "access_level": "Standard",
+      "image": "staff7.jpeg",
+      "account_status": "Inactive",
+      "id": 24567342
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Daniel",
+      "last_name": "Brown",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 13",
+      "position": [
+        "IT Coordinator"
+      ],
+      "subjects": [
+        "Computer Science"
+      ],
+      "accountCreatedOn": "2023-06-29",
+      "access_level": "Standard",
+      "image": "staff6.jpeg",
+      "account_status": "Active",
+      "id": 24567343
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Sophia",
+      "last_name": "Jones",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 14",
+      "position": [
+        "Arts Coordinator"
+      ],
+      "subjects": [
+        "Art",
+        "Music"
+      ],
+      "accountCreatedOn": "2023-06-30",
+      "access_level": "Standard",
+      "image": "staff5.jpeg",
+      "account_status": "Active",
+      "id": 24567344
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Matthew",
+      "last_name": "Wilson",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 15",
+      "position": [
+        "Career Advisor"
+      ],
+      "subjects": [
+        "Career Development",
+        "Job Placement"
+      ],
+      "accountCreatedOn": "2023-07-01",
+      "access_level": "Standard",
+      "image": "staff4.jpeg",
+      "account_status": "Active",
+      "id": 24567345
+    },
+    {
+      "title": "Ms.",
+      "first_name": "Emma",
+      "last_name": "Anderson",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 16",
+      "position": [
+        "Community Relations"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-02",
+      "access_level": "Standard",
+      "image": "staff3.jpeg",
+      "account_status": "Active",
+      "id": 24567346
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Liam",
+      "last_name": "Thompson",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 17",
+      "position": [
+        "Finance Manager"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-03",
+      "access_level": "Standard",
+      "image": "staff2.jpeg",
+      "account_status": "Active",
+      "id": 24567347
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Ava",
+      "last_name": "White",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 18",
+      "position": [
+        "Public Relations"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-04",
+      "access_level": "Standard",
+      "image": "staff1.jpeg",
+      "account_status": "Inactive",
+      "id": 24567348
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Noah",
+      "last_name": "Hall",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 19",
+      "position": [
+        "Transportation Coordinator"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-05",
+      "access_level": "Standard",
+      "image": "staff3.jpeg",
+      "account_status": "Active",
+      "id": 24567349
+    },
+    {
+      "title": "Ms.",
+      "first_name": "Mia",
+      "last_name": "Martinez",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 20",
+      "position": [
+        "Events Coordinator"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-06",
+      "access_level": "Standard",
+      "image": "staff6.jpeg",
+      "account_status": "Active",
+      "id": 24567350
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Oliver",
+      "last_name": "Adams",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 21",
+      "position": [
+        "Facilities Manager"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-07",
+      "access_level": "Standard",
+      "image": "staff4.jpeg",
+      "account_status": "Active",
+      "id": 24567351
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Harper",
+      "last_name": "Hernandez",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 22",
+      "position": [
+        "Admissions Officer"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-08",
+      "access_level": "Standard",
+      "image": "staff5.jpeg",
+      "account_status": "Inactive",
+      "id": 24567352
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Ethan",
+      "last_name": "Garcia",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 23",
+      "position": [
+        "Security Coordinator"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-09",
+      "access_level": "Standard",
+      "image": "staff10.jpeg",
+      "account_status": "Active",
+      "id": 24567353
+    },
+    {
+      "title": "Ms.",
+      "first_name": "Luna",
+      "last_name": "King",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 24",
+      "position": [
+        "Arts and Crafts"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-10",
+      "access_level": "Standard",
+      "image": "staff3.jpeg",
+      "account_status": "Active",
+      "id": 24567354
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Jackson",
+      "last_name": "Wright",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 25",
+      "position": [
+        "Maintenance Supervisor"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-11",
+      "access_level": "Standard",
+      "image": "staff2.jpeg",
+      "account_status": "Active",
+      "id": 24567355
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Chloe",
+      "last_name": "Lopez",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 26",
+      "position": [
+        "Communication Specialist"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-12",
+      "access_level": "Standard",
+      "image": "staff8.jpeg",
+      "account_status": "Active",
+      "id": 24567356
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Lucas",
+      "last_name": "Ramirez",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 27",
+      "position": [
+        "Records Clerk"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-13",
+      "access_level": "Standard",
+      "image": "staff5.jpeg",
+      "account_status": "Inactive",
+      "id": 24567357
+    },
+    {
+      "title": "Ms.",
+      "first_name": "Grace",
+      "last_name": "Scott",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 28",
+      "position": [
+        "Special Needs Coordinator"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-14",
+      "access_level": "Standard",
+      "image": "staff10.jpeg",
+      "account_status": "Active",
+      "id": 24567358
+    },
+    {
+      "title": "Mr.",
+      "first_name": "Leo",
+      "last_name": "Flores",
+      "gender": "Male",
+      "phone_number": "+237 6XX XX XX 29",
+      "position": [
+        "Technology Integrator"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-15",
+      "access_level": "Standard",
+      "image": "staff7.jpeg",
+      "account_status": "Active",
+      "id": 24567359
+    },
+    {
+      "title": "Mrs.",
+      "first_name": "Aria",
+      "last_name": "Perez",
+      "gender": "Female",
+      "phone_number": "+237 6XX XX XX 30",
+      "position": [
+        "Parent Relations"
+      ],
+      "subjects": [],
+      "accountCreatedOn": "2023-07-16",
+      "access_level": "Standard",
+      "image": "staff1.jpeg",
+      "account_status": "Active",
+      "id": 24567360
+    },
+    {
+      "gender": "Mr",
+      "title": "male",
+      "first_name": "Jessin",
+      "last_name": "Macdon",
+      "phone_number": "017632271138",
+      "subjects": [
+        "Mathematics"
+      ],
+      "position": [
+        "Discipline Master 1"
+      ],
+      "accountCreatedOn": "27/08/2023",
+      "access_level": "Admin",
+      "image": "",
+      "account_status": "Active",
+      "id": 57137216
+    }
+  ]
 }

@@ -133,37 +133,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Staff details Modal -->
-				<div
-					class="modal fade"
-					id="staffModal"
-					tabindex="-1"
-					aria-labelledby="staffModalLabel"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-dialog-centered modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="staffModalLabel">Staff Details</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<div class="modal-body">
-								<!-- Staff details will be displayed here -->
-							</div>
-							<div class="modal-footer">
-								<button class="btn btn-danger deactivate-btn"
-									>Deactivate</button
-								>
-								<button class="btn btn-primary activate-btn">Activate</button>
-							</div>
-						</div>
-					</div>
-				</div>
+
 				<!-- create new staff account modal -->
 				<div
 					class="modal fade add-staff-modal"
@@ -195,7 +165,11 @@
 														<label for="selectGender">
 															Gender<span>&#42;</span>
 														</label>
-														<select class="form-select" id="selectGender" required>
+														<select
+															class="form-select"
+															id="selectGender"
+															required
+														>
 															<option value="">Select gender</option>
 															<option value="male"> Male </option>
 															<option value="female"> Female </option>
@@ -309,10 +283,44 @@
 									<a href="#" data-bs-dismiss="modal"></a>
 									<span>Cancel</span>
 								</div>
-								<button class="my-btn pry-btn" id="create-account">Create</button>
-								<div class="my-btn pry-btn">
-									<a href="#" data-bs-dismiss="modal"></a>
-									<span>Create</span>
+								<button class="my-btn pry-btn" id="create-account"
+									>Create</button
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- loader modal -->
+				<!-- Staff details Modal -->
+				<div
+					class="modal fade"
+					id="loaderModal"
+					tabindex="-1"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">
+								<div id="loadingMessage">
+									<div class="progress"></div>
+									<div>We are creating the new account</div>
+								</div>
+								<div id="successMessage">
+									<div class="progress"></div>
+									<div>The new account has been created successfully</div>
+								</div>
+								<div id="failedMessage">
+									<div class="progress"></div>
+									<div>Sorry we encountered an error while adding new staff member. Please ty again later.</div>
 								</div>
 							</div>
 						</div>
