@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-	const activateBtn = document.querySelector(".activate-btn");
-	const deactivateBtn = document.querySelector(".deactivate-btn");
-
 	const urlParams = new URLSearchParams(window.location.search);
 	const staffId = urlParams.get("staffId");
 
@@ -16,27 +13,27 @@ document.addEventListener("DOMContentLoaded", function () {
 				if (clickedStaff) {
 					const staffName = document.querySelector(".top .staff-name");
 					const staffInfo = document.querySelector("main .staff-info");
-					const accountStatusText = document.querySelector(
+					const account_statusText = document.querySelector(
 						".account-status-dependent .account-status-text"
 					);
 
-					staffName.textContent = `${clickedStaff.firstName} ${clickedStaff.lastName}`;
+					staffName.textContent = `${clickedStaff.first_name} ${clickedStaff.last_name}`;
 					staffInfo.innerHTML = `
                         <div class="form-container">
                             <form>
                                 <div class="form-group">
-                                    <label for="firstName">First Name:</label>
-                                    <input type="text" id="firstName" class="form-control" value="${
-																			clickedStaff.firstName
+                                    <label for="first_name">First Name:</label>
+                                    <input type="text" id="first_name" class="form-control" value="${
+																			clickedStaff.first_name
 																		}" disabled />
-                                    <a href="#" class="update-field" data-field="firstName">Update</a>
+                                    <a href="#" class="update-field" data-field="first_name">Update</a>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lastName">Last Name:</label>
-                                    <input type="text" id="lastName" class="form-control" value="${
-																			clickedStaff.lastName
+                                    <label for="last_name">Last Name:</label>
+                                    <input type="text" id="last_name" class="form-control" value="${
+																			clickedStaff.last_name
 																		}" disabled />
-                                    <a href="#" class="update-field" data-field="lastName">Update</a>
+                                    <a href="#" class="update-field" data-field="last_name">Update</a>
                                 </div>
                                 <div class="form-group">
                                     <label for="title">Title:</label>
@@ -46,29 +43,31 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <a href="#" class="update-field" data-field="title">Update</a>
                                 </div>
                                 <div class="form-group">
-                                    <label for="sex">Sex:</label>
-                                    <input type="text" id="sex" class="form-control" value="${
-																			clickedStaff.sex
+                                    <label for="gender">gender:</label>
+                                    <input type="text" id="gender" class="form-control" value="${
+																			clickedStaff.gender
 																		}" disabled />
-                                    <a href="#" class="update-field" data-field="sex">Update</a>
+                                    <a href="#" class="update-field" data-field="gender">Update</a>
                                 </div>
                                 <div class="form-group">
-                                    <label for="phoneNumber">Phone Number:</label>
-                                    <input type="text" id="phoneNumber" class="form-control" value="${
-																			clickedStaff.phoneNumber
+                                    <label for="phone_number">Phone Number:</label>
+                                    <input type="text" id="phone_number" class="form-control" value="${
+																			clickedStaff.phone_number
 																		}" disabled />
-                                    <a href="#" class="update-field" data-field="phoneNumber">Update</a>
+                                    <a href="#" class="update-field" data-field="phone_number">Update</a>
                                 </div>
                                 <div class="form-group">
                                     <label for="adminRole">Administrative Role:</label>
                                     <input type="text" id="adminRole" class="form-control" value="${
-																			clickedStaff.adminRole
+																			clickedStaff.position
 																		}" disabled />
                                     <a href="#" class="update-field" data-field="adminRole">Update</a>
                                 </div>
                                 <div class="form-group">
                                     <label for="subjects"></label>
-                                    <p id="subjects"><strong>Subjects:</strong>${clickedStaff.subjects}</p>
+                                    <p id="subjects"><strong>Subjects:</strong>${
+																			clickedStaff.subjects
+																		}</p>
                                     <a href="#" class="update-field" data-field="subjects">Update</a>
                                 </div>
                             </form>
@@ -77,14 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
 													clickedStaff.accountCreatedOn
 												}</p>
 						<p><strong>Account Status:</strong> <span class="${
-							clickedStaff.accountStatus === "Active"
+							clickedStaff.account_status === "Active"
 								? "text-success"
 								: "text-danger"
 						}" id="${
-						clickedStaff.accountStatus === "active"
+						clickedStaff.account_status === "active"
 							? "textActive"
 							: "textInactive"
-					}">${clickedStaff.accountStatus}</span></p>
+					}">${clickedStaff.account_status}</span></p>
                         <div class="image-container">
                             <img src="assets/staff-profile/${
 															clickedStaff.image
@@ -114,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					const deactivateBtn = document.querySelector(".deactivate-btn");
 					const activateBtn = document.querySelector(".activate-btn");
 
-					if (clickedStaff.accountStatus === "Active") {
+					if (clickedStaff.account_status === "Active") {
 						deactivateBtn.style.display = "block";
 						activateBtn.style.display = "none";
 					} else {
