@@ -113,6 +113,110 @@
 					<!-- Staff details will be displayed here -->
 				</div>
 			</main>
+			<!-- add new subject form -->
+			<div
+				class="modal fade creat-new"
+				id="addSubjectModal"
+				tabindex="-1"
+				aria-labelledby="addSubjectModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="newStaffModalLabel"
+								>Add a new subject</h5
+							>
+							<button
+								type="button"
+								class="close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							>
+								<i class="bx bxs-x-circle"></i>
+							</button>
+						</div>
+						<form action="">
+							<div class="form-group">
+								<div>
+									<select id="levelSelectField" required>
+										<option value="0">Select the cycle</option>
+										<option value="OL">First cycle</option>
+										<option value="AL">Second cycle</option>
+									</select>
+								</div>
+								<div>
+									<label for="coefficientSelectField"></label>
+									<select id="coefficientSelectField required">
+										<option value="0">Select the coefficient</option>
+										<option value="1">coeff 1</option>
+										<option value="3">coeff 3</option>
+										<option value="4">coeff 4</option>
+										<option value="5">coeff 5</option>
+									</select>
+								</div>
+								<div>
+									<label for="addSubjectInput"></label>
+									<input
+										class="form-control"
+										type="text"
+										id="addSubjectInput"
+										placeholder="Enter new Subject"
+									/>
+								</div>
+							</div>
+							<button class="my-btn pry-btn add-sub"> Add subject </button>
+						</form>
+						<div>
+							Clicking the add the desired subject and automatically assign it
+							to this staff
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- add new position form -->
+			<div
+				class="modal fade creat-new"
+				id="addPositionModal"
+				tabindex="-1"
+				aria-labelledby="addPositionModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="newStaffModalLabel"
+								>Add a new position</h5
+							>
+							<button
+								type="button"
+								class="close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							>
+								<i class="bx bxs-x-circle"></i>
+							</button>
+						</div>
+						<form action="">
+							<div class="form-group">
+								<label for="addPositionInput"></label>
+								<input
+									class="form-control"
+									type="text"
+									id="addPositionInput"
+									placeholder="Enter new position"
+								/>
+							</div>
+							<button class="my-btn pry-btn"> Add position </button>
+						</form>
+						<div>
+							Clicking the add the desired position and automatically assign it
+							to this staff
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- bootstrap js files -->
