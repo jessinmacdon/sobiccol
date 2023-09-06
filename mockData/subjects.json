@@ -117,85 +117,85 @@
 		],
 		"second cycle": [
 			{
-				"name": "HS English Language",
+				"name": "AL English Language",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS French",
+				"name": "AL French",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Biology",
+				"name": "AL Biology",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Chemistry",
+				"name": "AL Chemistry",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Physics",
+				"name": "AL Physics",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS History",
+				"name": "AL History",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Economics",
+				"name": "AL Economics",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Geography",
+				"name": "AL Geography",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Literature in English",
-				"coefficient": "5",
-				"coefficient exam class": "5"
-			},
-
-			{
-				"name": "HS Computer science",
+				"name": "AL Literature in English",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 
 			{
-				"name": "HS Geology",
+				"name": "AL Computer science",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 
 			{
-				"name": "HS Special Bilingual French",
+				"name": "AL Geology",
+				"coefficient": "5",
+				"coefficient exam class": "5"
+			},
+
+			{
+				"name": "AL Special Bilingual French",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Accounting",
+				"name": "AL Accounting",
 				"coefficient": "3",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Religious Studies",
+				"name": "AL Religious Studies",
 				"coefficient": "5",
 				"coefficient exam class": "5"
 			},
 			{
-				"name": "HS Physical Education/Sports",
+				"name": "AL Physical Education/Sports",
 				"coefficient": "1",
 				"coefficient exam class": "1"
 			},
 			{
-				"name": "HS Manual Labour",
+				"name": "AL Manual Labour",
 				"coefficient": "1",
 				"coefficient exam class": "1"
 			},

@@ -419,15 +419,28 @@ document.addEventListener("DOMContentLoaded", async function () {
 	}
 });
 
-// Function to set up focus and blur events for search inputs
-function setupSearchInputFocusBlur(selectElement, dataList) {
-	selectElement.addEventListener("focus", function () {
-		selectElement.size = dataList.length + 1;
-		// Deselect any selected option
-		selectElement.selectedIndex = -2;
+// When the "Add Subject" button in the popover is clicked, open the Add Subject modal
+document
+	.getElementById("addSubjectPopover")
+	.addEventListener("click", function () {
+		var modal = new bootstrap.Modal(
+			document.getElementById("addSubjectModal"),
+			{
+				backdrop: "static", // Prevent closing on outside click
+			}
+		);
+		modal.show();
 	});
 
-	selectElement.addEventListener("blur", function () {
-		selectElement.size = 1;
+// When the "Add Position" button in the popover is clicked, open the Add Position modal
+document
+	.getElementById("addPositionPopover")
+	.addEventListener("click", function () {
+		var modal = new bootstrap.Modal(
+			document.getElementById("addPositionModal"),
+			{
+				backdrop: "static", // Prevent closing on outside click
+			}
+		);
+		modal.show();
 	});
-}

@@ -254,6 +254,16 @@
 																id="subjectSearchInput"
 																placeholder="Start typing subject.."
 															/>
+															<div class="add-new-subject">
+																<button
+																	type="button"
+																	id="addSubjectPopover"
+																	class="btn my-btn sec-btn"
+																	data-bs-title="Add a new subject"
+																>
+																	<i class="bx bx-plus"></i>
+																</button>
+															</div>
 														</div>
 														<ul id="selectedSubjectsList"></ul>
 													</div>
@@ -269,6 +279,17 @@
 																placeholder="Start typing position."
 																class="form-control"
 															/>
+															<div class="add-new-position">
+																<button
+																	type="button"
+																	id="addPositionPopover"
+																	class="btn my-btn sec-btn"
+																	data-bs-title="Add a new position"
+																	data-bs-toggle="popover"
+																>
+																	<i class="bx bx-plus"></i>
+																</button>
+															</div>
 														</div>
 														<ul id="selectedPositionsList"></ul>
 													</div>
@@ -291,8 +312,80 @@
 					</div>
 				</div>
 
+				<!-- add new subject form -->
+				<div
+					class="modal fade edit-subject"
+					id="editSubjectModal"
+					tabindex="-1"
+					aria-labelledby="editSubjectModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="editStaffModalLabel">
+									Edit subjects
+								</h5>
+								<button
+									type="button"
+									class="close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								>
+									<i class="bx bxs-x-circle"></i>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form action="">
+									<div class="form-group">
+										<div>
+											<label for="editSubjectInput"></label>
+											<input
+												class="form-control"
+												type="text"
+												id="editSubjectInput"
+												placeholder="Enter new Subject"
+											/>
+										</div>
+									</div>
+									<button class="my-btn pry-btn edit-sub"> Add subject </button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- add new position form -->
+				<div
+					class="modal fade edit-position"
+					id="editPositionModal"
+					tabindex="-1"
+					aria-labelledby="editPositionModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="newStaffModalLabel"
+									>Edit positions</h5
+								>
+								<button
+									type="button"
+									class="close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								>
+									<i class="bx bxs-x-circle"></i>
+								</button>
+							</div>
+							<form action="">
+								<button class="my-btn pry-btn">Update</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
 				<!-- loader modal -->
-				<!-- Staff details Modal -->
 				<div
 					class="modal fade"
 					id="loaderModal"
@@ -320,7 +413,10 @@
 								</div>
 								<div id="failedMessage">
 									<div class="progress"></div>
-									<div>Sorry we encountered an error while adding new staff member. Please ty again later.</div>
+									<div
+										>Sorry we encountered an error while editing new staff
+										member. Please ty again later.</div
+									>
 								</div>
 							</div>
 						</div>
@@ -351,10 +447,11 @@
 		<script src="/scripts/admin-center.js"></script> -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="scripts/manage-staff.js"></script>
+		<!-- <script src="scripts/create.js"></script> -->
 		<!-- <script src="scripts/dynamic-selects.js"></script> -->
 		<!-- 
 		<script src="scripts/students.js"></script>
 		<script src="scripts/calendar.js"></script>
-		<script src="scripts/create.js"></script> -->
+		 -->
 	</body>
 </html>

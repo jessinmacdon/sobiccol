@@ -58,17 +58,16 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>
                                 <div class="form-group">
                                     <label for="adminRole">Administrative Role:</label>
-                                    <input type="text" id="adminRole" class="form-control" value="${
-																			clickedStaff.position
-																		}" disabled />
-                                    <a href="#" class="update-field" data-field="adminRole">Update</a>
+									<p id="adminRole"><strong>Positions:</strong>
+                                    ${clickedStaff.position}</p>
+                                    <a href="#" class="edit-position" data-field="adminRole">Edit</a>
                                 </div>
                                 <div class="form-group">
                                     <label for="subjects"></label>
                                     <p id="subjects"><strong>Subjects:</strong>${
 																			clickedStaff.subjects
-																		}</p>
-                                    <a href="#" class="update-field" data-field="subjects">Update</a>
+																		}
+                                    <a href="#" class="edit-subjects" data-field="subjects">Edit</a>
                                 </div>
                             </form>
                         </div>

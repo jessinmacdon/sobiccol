@@ -1,4 +1,3 @@
-//Added on 17.08
 document.addEventListener("DOMContentLoaded", () => {
 	const branchSelect = document.getElementById("newStudbranch");
 	const stageSelect = document.getElementById("newStudStage");
@@ -170,3 +169,5 @@ document.addEventListener("DOMContentLoaded", () => {
 			console.error("Error loading JSON data:", error);
 		});
 });
+
+
