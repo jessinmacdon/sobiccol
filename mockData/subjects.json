@@ -1,110 +1,110 @@
 {
 	"subjects": {
-		"first cycle": [
+		"first_cycle": [
 			{
 				"name": "Mathematics",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "English Language",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "French",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Biology",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Chemistry",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Physics",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "History",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Economics",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Geography",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Literature in English",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Citizenship Education",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Computer science",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Additional Mathematics",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Human Biology",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Commerce",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Geology",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Logic",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Food and Nutrition",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Special Bilingual French",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Accounting",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Religious Studies",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Physical Education/Sports",
@@ -115,119 +115,119 @@
 				"coefficient": "1"
 			}
 		],
-		"second cycle": [
+		"second_cycle": [
 			{
 				"name": "AL English Language",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL French",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Biology",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Chemistry",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Physics",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL History",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Economics",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Geography",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Literature in English",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 
 			{
 				"name": "AL Computer science",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 
 			{
 				"name": "AL Geology",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 
 			{
 				"name": "AL Special Bilingual French",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Accounting",
 				"coefficient": "3",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Religious Studies",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "AL Physical Education/Sports",
 				"coefficient": "1",
-				"coefficient exam class": "1"
+				"coefficient_exam_class": "1"
 			},
 			{
 				"name": "AL Manual Labour",
 				"coefficient": "1",
-				"coefficient exam class": "1"
+				"coefficient_exam_class": "1"
 			},
 			{
 				"name": "Mathematics with Statistics",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Mathematics with Mechanics",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Information and Communication Technology",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Further Mathematics",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Food science and Nutrition",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			},
 			{
 				"name": "Philosophy",
 				"coefficient": "5",
-				"coefficient exam class": "5"
+				"coefficient_exam_class": "5"
 			}
 		]
 	}

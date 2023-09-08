@@ -683,6 +683,11 @@ button {
   display: none;
 }
 
+.existing-position,
+.existing-subject {
+  display: none;
+}
+
 /* end of new code block Aug27 */
 
 /* styles for the add new position and subject modal */

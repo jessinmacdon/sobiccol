@@ -314,18 +314,18 @@
 
 				<!-- add new subject form -->
 				<div
-					class="modal fade edit-subject"
-					id="editSubjectModal"
+					class="modal fade add-subject"
+					id="addSubjectModal"
 					tabindex="-1"
-					aria-labelledby="editSubjectModalLabel"
+					aria-labelledby="addSubjectModalLabel"
 					aria-hidden="true"
 				>
 					<div class="modal-dialog modal-dialog-centered">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="editStaffModalLabel">
-									Edit subjects
-								</h5>
+								<h5 class="modal-title" id="newStaffModalLabel"
+									>Add a new subject</h5
+								>
 								<button
 									type="button"
 									class="close"
@@ -335,21 +335,69 @@
 									<i class="bx bxs-x-circle"></i>
 								</button>
 							</div>
-							<div class="modal-body">
-								<form action="">
-									<div class="form-group">
-										<div>
-											<label for="editSubjectInput"></label>
-											<input
-												class="form-control"
-												type="text"
-												id="editSubjectInput"
-												placeholder="Enter new Subject"
-											/>
-										</div>
+							<form action="" id="addSubjectForm">
+								<div class="form-group">
+									<div>
+										<select id="levelSelectField" required>
+											<option value="0">Select the cycle</option>
+											<option value="OL">First cycle</option>
+											<option value="AL">Second cycle</option>
+										</select>
 									</div>
-									<button class="my-btn pry-btn edit-sub"> Add subject </button>
-								</form>
+									<div>
+										<label for="coefficientSelectField">coefficient</label>
+										<select id="coefficientSelectField" required>
+											<option value="0">Select the coefficient</option>
+											<option value="1">1</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+									</div>
+									<div>
+										<label for="coefficientExamSelectField"
+											>Coefficient exam class</label
+										>
+										<select id="coefficientExamSelectField" required>
+											<option value="0">Select the coefficient</option>
+											<option value="1">1</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+									</div>
+									<div>
+										<label for="addSubjectInput"></label>
+										<input
+											class="form-control"
+											type="text"
+											id="addSubjectInput"
+											placeholder="Enter new Subject"
+										/>
+									</div>
+								</div>
+								<div>
+									Clicking the add the desired subject and automatically assign
+									it to this staff
+								</div>
+								<button class="my-btn pry-btn" id="newSubject">
+									Add subject
+								</button>
+							</form>
+							<div class="existing-subject" id="subjectExists">
+								<span
+									>It seems the subject you are trying to create already exists.
+									Please review the subject name you entered. If you want to
+									assign the existing subject to this staff click the assign to
+									staff button below</span
+								>
+								<div class="btn-container">
+									<button class="cancel-btn my-btn">Cancel</button>
+									<button
+										class="my-btn pry-btn"
+										id="assignSubjectToStaff"
+									></button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -357,17 +405,17 @@
 
 				<!-- add new position form -->
 				<div
-					class="modal fade edit-position"
-					id="editPositionModal"
+					class="modal fade add-position"
+					id="addPositionModal"
 					tabindex="-1"
-					aria-labelledby="editPositionModalLabel"
+					aria-labelledby="addPositionModalLabel"
 					aria-hidden="true"
 				>
 					<div class="modal-dialog modal-dialog-centered">
 						<div class="modal-content">
 							<div class="modal-header">
 								<h5 class="modal-title" id="newStaffModalLabel"
-									>Edit positions</h5
+									>Add a new position</h5
 								>
 								<button
 									type="button"
@@ -378,9 +426,45 @@
 									<i class="bx bxs-x-circle"></i>
 								</button>
 							</div>
-							<form action="">
-								<button class="my-btn pry-btn">Update</button>
+							<form action="" id="addPositionForm">
+								<div>
+									<label for="positionTypeSelectField"></label>
+									<select id="positionTypeSelectField required">
+										<option value="0">select the type of position</option>
+										<option value="1">Staff</option>
+										<option value="2" disabled>Student</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="addPositionInput"></label>
+									<input
+										class="form-control"
+										type="text"
+										id="addPositionInput"
+										placeholder="Enter new position"
+									/>
+								</div>
+								<div>
+									Clicking the add the desired position and automatically assign
+									it to this staff
+								</div>
+								<button class="my-btn pry-btn"> Add position </button>
 							</form>
+							<div class="existing-position" id="positionExists">
+								<span
+									>It seems the position you are trying to create already
+									exists. Please review the position you entered. If you want to
+									assign the existing position to this staff click the assign to
+									staff button below</span
+								>
+								<div class="btn-container">
+									<button class="cancel-btn my-btn">Cancel</button>
+									<button
+										class="my-btn pry-btn"
+										id="assignPositionToStaff"
+									></button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -414,7 +498,7 @@
 								<div id="failedMessage">
 									<div class="progress"></div>
 									<div
-										>Sorry we encountered an error while editing new staff
+										>Sorry we encountered an error while adding new staff
 										member. Please ty again later.</div
 									>
 								</div>

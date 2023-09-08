@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 			// Add a placeholder option for default selection
 			const placeholderOption = document.createElement("option");
 			placeholderOption.value = "";
-			placeholderOption.text = "Select an option";
+			placeholderOption.text = "Select at least one option";
 			placeholderOption.disabled = true;
 			placeholderOption.selected = true;
 			selectElement.appendChild(placeholderOption);
@@ -150,15 +150,15 @@ document.addEventListener("DOMContentLoaded", async function () {
 		}
 
 		const allSubjects = [
-			...subjectsData.subjects["first cycle"],
-			...subjectsData.subjects["second cycle"],
+			...subjectsData.subjects["first_cycle"],
+			...subjectsData.subjects["second_cycle"],
 		];
 
 		// Add a placeholder option for default selection
 		function addPlaceholderOption(selectElement) {
 			const placeholderOption = document.createElement("option");
 			placeholderOption.value = "";
-			placeholderOption.text = "Select an option";
+			placeholderOption.text = "Select a position";
 			placeholderOption.disabled = true;
 			placeholderOption.selected = true;
 			selectElement.appendChild(placeholderOption);
@@ -417,30 +417,163 @@ document.addEventListener("DOMContentLoaded", async function () {
 		});
 		return content.trim();
 	}
+
+	// When the "Add Subject" button in the popover is clicked, open the Add Subject modal
+	document
+		.getElementById("addSubjectPopover")
+		.addEventListener("click", function () {
+			var modal = new bootstrap.Modal(
+				document.getElementById("addSubjectModal"),
+				{
+					backdrop: "static", // Prevent closing on outside click
+				}
+			);
+			modal.show();
+		});
+
+	// When the "Add Position" button in the popover is clicked, open the Add Position modal
+	document
+		.getElementById("addPositionPopover")
+		.addEventListener("click", function () {
+			var modal = new bootstrap.Modal(
+				document.getElementById("addPositionModal"),
+				{
+					backdrop: "static", // Prevent closing on outside click
+				}
+			);
+			modal.show();
+		});
+
+	async function addNewSubject() {
+		const subjectName = document.getElementById("addSubjectInput").value;
+		const coefficientSelect = document.getElementById("coefficientSelectField");
+		const coefficient =
+			coefficientSelect.options[coefficientSelect.selectedIndex].value;
+		const coefficientExamSelect = document.getElementById(
+			"coefficientExamSelectField"
+		);
+		const coefficientExam =
+			coefficientExamSelect.options[coefficientExamSelect.selectedIndex].value;
+		const levelSelect = document.getElementById("levelSelectField");
+		const level = levelSelect.options[levelSelect.selectedIndex].value;
+
+		let cycle, newSubjectName;
+		if (level === "OL") {
+			cycle = "first_cycle";
+			newSubjectName = subjectName;
+		} else {
+			cycle = "second_cycle";
+			newSubjectName = "AL " + subjectName;
+		}
+
+		const newSubject = {
+			name: newSubjectName,
+			coefficient: coefficient,
+			coefficient_exam_class: coefficientExam,
+		};
+
+		try {
+			// Fetch existing subjects data
+			const response = await fetch("http://localhost:3000/subjects");
+			const subjectsData = await response.json();
+
+			// Check if the subject already exists in the selected cycle
+			if (isSubjectExists(newSubjectName, subjectsData.subjects[cycle])) {
+				alert("This subject already exists in the database.");
+				return;
+			}
+
+			// Add the new subject to the existing data
+			subjectsData.subjects[cycle].push(newSubject);
+
+			// Update the subjects data on the server
+			const updatedResponse = await fetch("http://localhost:3000/subjects", {
+				method: "PUT", // Use the appropriate HTTP method for updating
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(subjectsData),
+			});
+
+			if (updatedResponse.ok) {
+				alert("New subject successfully added.");
+			} else {
+				alert("Failed to add the new subject.");
+			}
+
+			// Automatically add the newly added subject to the select options
+			const subjectsSelect = document.getElementById("subjectSelectField");
+			const newOption = document.createElement("option");
+			newOption.value = newSubjectName;
+			newOption.text = newSubjectName;
+			subjectsSelect.appendChild(newOption);
+			subjectsSelect.value = newSubjectName;
+
+			closeModal("addSubjectModal");
+		} catch (error) {
+			console.error("Error adding new subject:", error);
+		}
+	}
+
+	async function addNewPosition() {
+		const positionName = document.getElementById("addPositionInput").value;
+		const positionTypeSelect = document.getElementById(
+			"positionTypeSelectField"
+		);
+		const positionType =
+			positionTypeSelect.options[positionTypeSelect.selectedIndex].value;
+
+		try {
+			// Fetch existing positions data
+			const response = await fetch("http://localhost:3000/positions");
+			const positionsData = await response.json();
+
+			// Check if the position already exists
+			if (
+				isPositionExists(
+					positionName,
+					positionType === "1"
+						? positionsData.position.staff
+						: positionsData.position.student
+				)
+			) {
+				alert("This position already exists in the database.");
+				return;
+			}
+
+			// Add the new position to the appropriate array
+			if (positionType === "1") {
+				positionsData.position.staff.push(positionName);
+			} else {
+				positionsData.position.student.push(positionName);
+			}
+
+			// Update the positions data on the server
+			const updatedResponse = await fetch("http://localhost:3000/positions", {
+				method: "PUT", // Use the appropriate HTTP method for updating
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(positionsData),
+			});
+
+			if (updatedResponse.ok) {
+				alert("New position successfully added.");
+			} else {
+				alert("Failed to add the new position.");
+			}
+
+			// Automatically add the newly added position to the select options
+			const positionsSelect = document.getElementById("positionSelectField");
+			const newOption = document.createElement("option");
+			newOption.value = positionName;
+			newOption.text = positionName;
+			positionsSelect.appendChild(newOption);
+			positionsSelect.value = positionName;
+
+			closeModal("addPositionModal");
+		} catch (error) {
+			console.error("Error adding new position:", error);
+		}
+	}
 });
-
-// When the "Add Subject" button in the popover is clicked, open the Add Subject modal
-document
-	.getElementById("addSubjectPopover")
-	.addEventListener("click", function () {
-		var modal = new bootstrap.Modal(
-			document.getElementById("addSubjectModal"),
-			{
-				backdrop: "static", // Prevent closing on outside click
-			}
-		);
-		modal.show();
-	});
-
-// When the "Add Position" button in the popover is clicked, open the Add Position modal
-document
-	.getElementById("addPositionPopover")
-	.addEventListener("click", function () {
-		var modal = new bootstrap.Modal(
-			document.getElementById("addPositionModal"),
-			{
-				backdrop: "static", // Prevent closing on outside click
-			}
-		);
-		modal.show();
-	});
