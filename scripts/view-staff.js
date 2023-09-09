@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <label for="adminRole">Administrative Role:</label>
 									<p id="adminRole"><strong>Positions:</strong>
                                     ${clickedStaff.position}</p>
-                                    <a href="#" class="edit-position" data-field="adminRole">Edit</a>
+                                    <a href="#" class="edit-position" data-field="adminRole" id="edit">Edit</a>
                                 </div>
                                 <div class="form-group">
                                     <label for="subjects"></label>
                                     <p id="subjects"><strong>Subjects:</strong>${
 																			clickedStaff.subjects
 																		}
-                                    <a href="#" class="edit-subjects" data-field="subjects">Edit</a>
+                                    <a href="#" class="edit-subjects" data-field="subjects" id="editSubjects">Edit</a>
                                 </div>
                             </form>
                         </div>
@@ -123,4 +123,21 @@ document.addEventListener("DOMContentLoaded", function () {
 			})
 			.catch((error) => console.error("Error fetching staff data:", error));
 	}
+
+	// Populate select fields when the page loads
+	fetch("mockData/subjects.json")
+		.then((response) => response.json())
+		.then((subjectsData) => {
+			const subjectSelectField = document.getElementById("subjectSelectField");
+			populateSelectFields(subjectSelectField, subjectsData.subjects);
+		});
+
+	fetch("mockData/positions.json")
+		.then((response) => response.json())
+		.then((positionsData) => {
+			const positionSelectField = document.getElementById(
+				"positionSelectField"
+			);
+			populateSelectFields(positionSelectField, positionsData.positions);
+		});
 });

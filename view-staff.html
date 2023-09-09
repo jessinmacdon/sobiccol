@@ -225,6 +225,100 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- edit subject collapse element -->
+			<div
+				class="modal fade edit-subject"
+				id="editSubjectModal"
+				tabindex="-1"
+				aria-labelledby="editSubjectModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5>Edit subjects</h5>
+							<button
+								type="button"
+								class="close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							>
+								<i class="bx bxs-x-circle"></i>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="control-details">
+								<label for="subjectSelectField">
+									Subjects<span>&#42;</span>
+								</label>
+								<div class="select-subject-container">
+									<select id="subjectSelectField">
+										<!-- options will be added dynamically from subjects.json -->
+									</select>
+									<input
+										type="text"
+										id="subjectSearchInput"
+										placeholder="Start typing subject.."
+									/>
+								</div>
+								<ul id="selectedSubjectsList"></ul>
+							</div>
+							<div class="btn-container">
+								<button
+									class="edit-sub-btn my-btn cancel-btn"
+									data-bs-dismiss="modal"
+								>
+									Cancel
+								</button>
+								<button type="submit" class="edit-sub-btn my-btn pry-btn">
+									Save
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- edit position collapse element -->
+			<div
+				class="modal fade edit-position"
+				id="editPositionModal"
+				tabindex="-1"
+				aria-labelledby="editPositionModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="control-details">
+							<label for="positionSelectField">Position</label>
+							<div class="select-position-container">
+								<select id="positionSelectField">
+									<!-- options will be added dynamically from positions.json -->
+								</select>
+								<input
+									type="text"
+									id="positionSearchInput"
+									placeholder="Start typing position."
+									class="form-control"
+								/>
+							</div>
+							<ul id="selectedPositionsList"></ul>
+						</div>
+						<div class="btn-container">
+							<button
+								class="edit-sub-btn my-btn cancel-btn"
+								data-bs-dismiss="modal"
+							>
+								Cancel
+							</button>
+							<button type="submit" class="edit-sub-btn my-btn pry-btn">
+								Save
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- bootstrap js files -->
@@ -249,7 +343,7 @@
 		<script src="/scripts/admin-center.js"></script> -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<!-- <script src="scripts/manage-staff.js"></script> -->
-		<script src="scripts/view-staff.js"></script>
+		<script src="scripts/manage-staff.js"></script>
 		<!-- <script src="scripts/class.js"></script> -->
 		<!-- <script src="scripts/students.js"></script>
 		<script src="scripts/calendar.js"></script>
