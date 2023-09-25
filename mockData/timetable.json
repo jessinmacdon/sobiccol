@@ -1,428 +1,1131 @@
 {
-	"calendar": {
-		"branch": {
-			"levels": [
-				{
-					"name": "form 1",
-					"class": [
-						{
-							"name": "A",
-							"days": [
-								{
-									"name": "monday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								},
-								{
-									"name": "tuesday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								},
-								{
-									"name": "wednesday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								},
-								{
-									"name": "thursday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								},
-								{
-									"name": "friday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"name": "form 2",
-					"class": [
-						{
-							"name": "A",
-							"days": [
-								{
-									"name": "monday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								},
-								{
-									"name": "tuesday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								},
-								{
-									"name": "wednesday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								},
-								{
-									"name": "thursday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								},
-								{
-									"name": "friday",
-									"schedule": [
-										{
-											"name": "period 1",
-											"subject": "Biology",
-											"teacher": "Mr Mentchum"
-										},
-										{
-											"name": "period 2",
-											"subject": "Food & Nutrition",
-											"teacher": "Ms Sability"
-										},
-										{
-											"name": "period 3",
-											"subject": "Chemistry",
-											"teacher": "Mr Sapelipopette"
-										},
-										{
-											"name": "period 4",
-											"subject": "Mathematics",
-											"teacher": "Mr Cut Am - Nail Am"
-										},
-										{
-											"name": "period 5",
-											"subject": "Literature in English",
-											"teacher": "Mr Sapa"
-										},
-										{
-											"name": "period 1",
-											"subject": "History",
-											"teacher": "Ms Sabinus"
-										},
-										{
-											"name": "period 6",
-											"subject": "Physics",
-											"teacher": "Mr Docas"
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		}
+	"timetable": {
+		"branch": [
+			{
+				"name": "grammar",
+				"levels": [
+					{
+						"name": "form 1",
+						"class": [
+							{
+								"name": "A",
+								"days": [
+									{
+										"name": "monday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "tuesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "wednesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "thursday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "friday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "form 2",
+						"class": [
+							{
+								"name": "A",
+								"days": [
+									{
+										"name": "monday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "tuesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "wednesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "thursday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "friday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Commercial",
+				"levels": [
+					{
+						"name": "form 1",
+						"class": [
+							{
+								"name": "A",
+								"days": [
+									{
+										"name": "monday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "tuesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "wednesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "thursday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "friday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "form 2",
+						"class": [
+							{
+								"name": "A",
+								"days": [
+									{
+										"name": "monday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "tuesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "wednesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "thursday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "friday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Technical",
+				"levels": [
+					{
+						"name": "form 1",
+						"class": [
+							{
+								"name": "A",
+								"days": [
+									{
+										"name": "monday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "tuesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "wednesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "thursday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "friday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "form 2",
+						"class": [
+							{
+								"name": "A",
+								"days": [
+									{
+										"name": "monday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "tuesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "wednesday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "thursday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									},
+									{
+										"name": "friday",
+										"schedule": [
+											{
+												"name": "period_1",
+												"subject": "Biology",
+												"teacher": "Mr Mentchum"
+											},
+											{
+												"name": "period_2",
+												"subject": "Food & Nutrition",
+												"teacher": "Ms Sability"
+											},
+											{
+												"name": "period_3",
+												"subject": "Chemistry",
+												"teacher": "Mr Sapelipopette"
+											},
+											{
+												"name": "period_4",
+												"subject": "Mathematics",
+												"teacher": "Mr Cut Am - Nail Am"
+											},
+											{
+												"name": "period_5",
+												"subject": "Literature in English",
+												"teacher": "Mr Sapa"
+											},
+											{
+												"name": "period_6",
+												"subject": "Physics",
+												"teacher": "Mr Docas"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
 	}
 }
