@@ -118,7 +118,7 @@
 				class="modal fade creat-new"
 				id="addSubjectModal"
 				tabindex="-1"
-				aria-labelledby="addSubjectModalLabel"
+				aria-labelledby="addSubjectModal"
 				aria-hidden="true"
 			>
 				<div class="modal-dialog modal-dialog-centered">
@@ -136,10 +136,10 @@
 								<i class="bx bxs-x-circle"></i>
 							</button>
 						</div>
-						<form action="">
+						<form action="POST">
 							<div class="form-group">
 								<div>
-									<select id="levelSelectField" required>
+									<select id="levelSelectField" required multiple>
 										<option value="0">Select the cycle</option>
 										<option value="OL">First cycle</option>
 										<option value="AL">Second cycle</option>
@@ -147,7 +147,7 @@
 								</div>
 								<div>
 									<label for="coefficientSelectField"></label>
-									<select id="coefficientSelectField required">
+									<select id="coefficientSelectField" required multiple>
 										<option value="0">Select the coefficient</option>
 										<option value="1">coeff 1</option>
 										<option value="3">coeff 3</option>
@@ -180,13 +180,13 @@
 				class="modal fade creat-new"
 				id="addPositionModal"
 				tabindex="-1"
-				aria-labelledby="addPositionModalLabel"
+				aria-labelledby="addPositionModal"
 				aria-hidden="true"
 			>
 				<div class="modal-dialog modal-dialog-centered">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="newStaffModalLabel"
+							<h5 class="modal-title" id="newPositionModalLabel"
 								>Add a new position</h5
 							>
 							<button
@@ -198,10 +198,10 @@
 								<i class="bx bxs-x-circle"></i>
 							</button>
 						</div>
-						<form action="">
+						<form action="POST">
 							<div>
 								<label for="positionTypeSelectField"></label>
-								<select id="positionTypeSelectField required">
+								<select id="positionTypeSelectField" required multiple>
 									<option value="0">select the type of position</option>
 									<option value="1">Staff</option>
 									<option value="2" disabled>Student</option>
@@ -231,7 +231,7 @@
 				class="modal fade edit-subject"
 				id="editSubjectModal"
 				tabindex="-1"
-				aria-labelledby="editSubjectModalLabel"
+				aria-labelledby="editSubjectModal"
 				aria-hidden="true"
 			>
 				<div class="modal-dialog modal-dialog-centered">
@@ -285,7 +285,7 @@
 				class="modal fade edit-position"
 				id="editPositionModal"
 				tabindex="-1"
-				aria-labelledby="editPositionModalLabel"
+				aria-labelledby="editPositionModal"
 				aria-hidden="true"
 			>
 				<div class="modal-dialog modal-dialog-centered">

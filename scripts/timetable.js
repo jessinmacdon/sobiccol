@@ -148,40 +148,92 @@ document.addEventListener("DOMContentLoaded", () => {
 				const tbody = table.querySelector("tbody");
 
 				// Check if a class is selected
-				if (selectedClass && selectedClass.days) {
-					// Loop through each day's schedule
-					selectedClass.days.forEach((daySchedule) => {
-						// Loop through the schedule for the day
-						daySchedule.schedule.forEach((schedule) => {
-							// Create a td element for each schedule
-							const period = document.createElement("td");
 
-							// Set the class of the td element to the schedule name
-							period.classList.add(`${schedule.name}`);
+				// Loop through each day's schedule
+				selectedClass.days.forEach((daySchedule) => {
+					// Check if the current day in the loop matches the selected day
+					if (daySchedule && daySchedule.name) {
+						// Get the tr element for the current day
+						const dayRow = document.querySelector(
+							`.${daySchedule.name.toLowerCase()}`
+						);
 
-							// Create a span for the subject
+						// Loop through the schedule for the day and populate the corresponding td elements
+						daySchedule.schedule.forEach((schedule, index) => {
+							const periodClass = `period_${index + 1}`;
+							const periodTd = dayRow.querySelector(`.${periodClass}`);
+
+							// Create spans for subject and teacher
 							const subjectSpan = document.createElement("span");
-							subjectSpan.classList.add(`${schedule.name}-subject`);
+							subjectSpan.classList.add("tt-subject");
 							subjectSpan.textContent = schedule.subject;
-							period.appendChild(subjectSpan);
 
-							// Create a span for the teacher
 							const teacherSpan = document.createElement("span");
-							teacherSpan.classList.add(`${schedule.name}-teacher`);
+							teacherSpan.classList.add("tt-teacher");
 							teacherSpan.textContent = schedule.teacher;
-							period.appendChild(teacherSpan);
-                            
-							// Log the created <td> element to the console
-							console.log(period);
 
-							// Find the corresponding tr element based on scheduleName
-							const tr = tbody.querySelector(`.${schedule.name}`);
+							// Clear the content of the td element before appending spans
+							periodTd.innerHTML = "";
 
-							// Append the td to the corresponding tr
-							tr.appendChild(period);
+							// Append spans to the td element
+							periodTd.appendChild(subjectSpan);
+							periodTd.appendChild(document.createElement("br")); // Add a line break between subject and teacher
+							periodTd.appendChild(teacherSpan);
 						});
+					}
+				});
+			}
+		});
+
+		// Event listener for timetable cells
+		document.addEventListener("click", (event) => {
+			const target = event.target;
+
+			// Check if the clicked element is an editable cell
+			if (target.classList.contains("editable-cell")) {
+				// Get the day and period of the clicked cell
+				const day = target.parentElement.getAttribute("class").toLowerCase();
+				const period = target.getAttribute("class").split("_")[1]; // Extract period number from class
+
+				// Find the corresponding data in jsonData using the day and period information
+				const selectedClass = jsonData.classes.find(
+					(cls) => cls.name === selectedClassName
+				);
+				const daySchedule = selectedClass.days.find(
+					(d) => d.name.toLowerCase() === day
+				);
+				const scheduleData = daySchedule.schedule[parseInt(period) - 1];
+
+				// Populate modal/form fields with scheduleData
+				document.getElementById("ttSelectSubject").value = scheduleData.subject;
+				document.getElementById("ttSelectTeacher").value = scheduleData.teacher;
+
+				// Open the modal for editing
+				const editPeriodModal = new bootstrap.Modal(
+					document.getElementById("editPeriodModal")
+				);
+				editPeriodModal.show();
+
+				// When the user saves changes
+				document
+					.querySelector(".add-sub")
+					.addEventListener("click", (event) => {
+						event.preventDefault();
+
+						// Update jsonData with edited data
+						const newSubject = document.getElementById("ttSelectSubject").value;
+						const newTeacher = document.getElementById("ttSelectTeacher").value;
+
+						// Update the scheduleData with edited subject and teacher
+						scheduleData.subject = newSubject;
+						scheduleData.teacher = newTeacher;
+
+						// Update the UI to reflect changes
+						target.textContent = `${newSubject}\n${newTeacher}`;
+
+						// Close the modal
+						editPeriodModal.hide();
 					});
-				}
 			}
 		});
 	});

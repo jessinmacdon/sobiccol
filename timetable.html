@@ -92,53 +92,184 @@
 				</nav>
 			</header>
 			<main>
-				<main>
-					<div class="control-center-item" id="manageTimetable">
-						<div class="timetable-content">
-							<div class="header">
-								<h2>Manage timetable</h2>
-							</div>
-						</div>
-						<!-- Secondary Navigation (Tabs) -->
-						<div class="timetable-nav" id="timetableNav">
-							<div class="branch-select-container">
-								<select class="choose-branch" name="branches" id="branch">
-									<!-- <option value="0" disabled selected>Choose branch</option> -->
-								</select>
-							</div>
-							<ul class="nav nav-tabs" id="classTabs" role="tablist">
-								<!-- List of classes as tabs -->
-							</ul>
-						</div>
-						<div class="tab-content timetable">
-							<div class="tab-pane">
-								<table>
-									<caption class="class-name"></caption>
-									<tbody>
-										<tr class="day-of-the-week">
-											<th>Monday</th>
-											<th>Tuesday</th>
-											<th>Wednesday</th>
-											<th>Thursday</th>
-											<th>Friday</th>
-										</tr>
-										<tr class="period_1">
-											
-										</tr>
-										<tr class="period_2"></tr>
-										<tr class="period_3"></tr>
-                                        <tr class="short-break">Break</tr>
-										<tr class="period_4"></tr>
-										<tr class="period_5"></tr>
-                                        <tr class="long-break">Long break</tr>
-										<tr class="period_6"></tr>
-									</tbody>
-								</table>
-							</div>
+				<div class="control-center-item" id="manageTimetable">
+					<div class="timetable-content">
+						<div class="header">
+							<h2>Manage timetable</h2>
 						</div>
 					</div>
-				</main>
+					<!-- Secondary Navigation (Tabs) -->
+					<div class="timetable-nav" id="timetableNav">
+						<div class="branch-select-container">
+							<select class="choose-branch" name="branches" id="branch">
+								<!-- <option value="0" disabled selected>Choose branch</option> -->
+							</select>
+						</div>
+						<ul class="nav nav-tabs" id="classTabs" role="tablist">
+							<!-- List of classes as tabs -->
+						</ul>
+					</div>
+					<div class="tab-content timetable">
+						<div class="tab-pane">
+							<table>
+								<caption class="class-name"></caption>
+								<tbody>
+									<tr class="table-heading">
+										<th>Day/Time</th>
+										<th>7:00 - 7:30</th>
+										<th>7:30 - 8:20</th>
+										<th>8:20 - 9:10</th>
+										<th>9:10 - 10:00</th>
+										<th>10:00 - 10:50</th>
+										<th>10:50 - 11:40</th>
+										<th>11:40 - 12:10</th>
+										<th>12:10 - 1:00</th>
+										<th>1:00 - 1:50</th>
+										<th>1:50 - 2:40</th>
+										<th>2:40 - 3:30</th>
+									</tr>
+
+									<!-- Monday -->
+									<tr class="monday">
+										<th>Monday</th>
+										<td class="morning-devotion span-all-trs">
+											Morning Devotion
+										</td>
+										<td class="period_1"></td>
+										<td class="period_2"></td>
+										<td class="period_3"></td>
+										<td class="period_4"></td>
+										<td class="period_5"></td>
+										<td class="break_period">Break</td>
+										<td class="period_6"></td>
+										<td class="period_7"></td>
+										<td class="period_8"></td>
+										<td class="period_9"></td>
+									</tr>
+
+									<!-- Tuesday -->
+									<tr class="tuesday">
+										<th>Tuesday</th>
+										<td class="morning-devotion span-all-trs">
+											Morning Devotion
+										</td>
+										<td class="period_1"></td>
+										<td class="period_2"></td>
+										<td class="period_3"></td>
+										<td class="period_4"></td>
+										<td class="period_5"></td>
+										<td class="break_period">Break</td>
+										<td class="period_6"></td>
+										<td class="period_7"></td>
+										<td class="period_8"></td>
+										<td class="period_9"></td>
+									</tr>
+
+									<!-- Wednesday -->
+									<tr class="wednesday">
+										<th>Wednesday</th>
+										<td class="morning-devotion span-all-trs">
+											Morning Devotion
+										</td>
+										<td class="period_1"></td>
+										<td class="period_2"></td>
+										<td class="period_3"></td>
+										<td class="period_4"></td>
+										<td class="period_5"></td>
+										<td class="break_period">Break</td>
+										<td class="period_6"></td>
+										<td class="period_7"></td>
+										<td class="period_8"></td>
+										<td class="period_9"></td>
+									</tr>
+
+									<!-- Thursday -->
+									<tr class="thursday">
+										<th>Thursday</th>
+										<td class="morning-devotion span-all-trs">
+											Morning Devotion
+										</td>
+										<td class="period_1"></td>
+										<td class="period_2"></td>
+										<td class="period_3"></td>
+										<td class="period_4"></td>
+										<td class="period_5"></td>
+										<td class="break_period">Break</td>
+										<td class="period_6"></td>
+										<td class="period_7"></td>
+										<td class="period_8"></td>
+										<td class="period_9"></td>
+									</tr>
+
+									<!-- Friday -->
+									<tr class="friday">
+										<th>Friday</th>
+										<td class="morning-devotion span-all-trs">
+											Morning Devotion
+										</td>
+										<td class="period_1"></td>
+										<td class="period_2"></td>
+										<td class="period_3"></td>
+										<td class="period_4"></td>
+										<td class="period_5"></td>
+										<td class="break_period">Break</td>
+										<td class="period_6"></td>
+										<td class="period_7"></td>
+										<td class="period_8"></td>
+										<td class="period_9"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
 			</main>
+		</div>
+
+		<!-- Edit period modal -->
+		<div
+			class="modal fade edit-period"
+			id="editPeriodModal"
+			tabindex="-1"
+			aria-labelledby="editPeriodModal"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="editPeriodModalLabel">Edit Period</h5>
+						<button
+							type="button"
+							class="close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="bx bxs-x-circle"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="POST">
+							<div class="form-group">
+								<div class="form-group">
+									<div>
+										<label for="ttSelectSubject">Subject</label>
+										<select id="ttSelectSubject" required multiple>
+											<option value="0">Select subject</option>
+										</select>
+									</div>
+									<div>
+										<label for="ttSelectTeacher">Teacher</label>
+										<select id="ttSelectTeacher" required multiple>
+											<option value="0">Select teacher</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<button class="my-btn pry-btn add-sub"> Save changes </button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- bootstrap js files -->
@@ -159,15 +290,7 @@
 		></script>
 
 		<!-- custom js files -->
-		<!-- <script src="/scripts/index.js"></script>
-		<script src="/scripts/admin-center.js"></script> -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="scripts/timetable.js"></script>
-		<!-- <script src="scripts/create.js"></script> -->
-		<!-- <script src="scripts/dynamic-selects.js"></script> -->
-		<!-- 
-		<script src="scripts/students.js"></script>
-		<script src="scripts/calendar.js"></script>
-		 -->
 	</body>
 </html>
