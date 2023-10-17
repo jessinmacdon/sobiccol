@@ -35,7 +35,36 @@
   --tran-05: all 0.3s ease;
 }
 
-/* sept-22 temp css */
+/* oct-17 temp css */
+
+/* Style the clickable area inside the cell */
+/* .period_1,
+.period_2,
+.period_3,
+.period_4,
+.period_5,
+.period_6,
+.period_7,
+.period_8,
+.period_9 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+} */
+
+/* Style the edit link inside the cell */
+/* .edit-period {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+} */
+
+/* oct-17 temp css */
+
 .class-btn {
   color: red;
   background-color: #2e329f;
@@ -67,9 +96,6 @@
   height: 100%;
   z-index: 100;
 }
-
-/* end of sept-22 temp css */
-
 
 body {
   min-height: 100vh;

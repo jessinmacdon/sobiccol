@@ -163,6 +163,26 @@ document.addEventListener("DOMContentLoaded", () => {
 							const periodClass = `period_${index + 1}`;
 							const periodTd = dayRow.querySelector(`.${periodClass}`);
 
+							// Create a clickable link for editing
+							const editLink = document.createElement("a");
+							editLink.href = "#";
+							editLink.classList.add("edit-period");
+
+							// Create the <i> element for the edit icon
+							const editIcon = document.createElement("i");
+							editIcon.classList.add("bx", "bxs-edit");
+							editLink.appendChild(editIcon);
+
+							// Add Bootstrap attributes to trigger the modal
+							editLink.setAttribute("data-bs-toggle", "modal");
+							editLink.setAttribute("data-bs-target", "#editPeriodModal");
+
+							//editLink.addEventListener("click", (event) => {
+							//event.preventDefault();
+							// Handle click event for the edit link here, like opening the modal for editing
+							// ... (your existing code for opening the modal)
+							//});
+
 							// Create spans for subject and teacher
 							const subjectSpan = document.createElement("span");
 							subjectSpan.classList.add("tt-subject");
@@ -176,6 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
 							periodTd.innerHTML = "";
 
 							// Append spans to the td element
+							periodTd.appendChild(editLink);
 							periodTd.appendChild(subjectSpan);
 							periodTd.appendChild(document.createElement("br")); // Add a line break between subject and teacher
 							periodTd.appendChild(teacherSpan);
