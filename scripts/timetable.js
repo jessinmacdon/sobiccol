@@ -1,5 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
 	// Define a function to fetch JSON data
+	function fetchJsonData(url) {
+		return fetch(url)
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error("Network response was not ok");
+				}
+				return response.json();
+			})
+			.catch((error) => {
+				console.error("Error fetching data:", error);
+				return null;
+			});
+	}
+
+	// Define a function to fetch JSON data
 	function fetchTimetableData(callback) {
 		// Fetch the JSON data
 		fetch("mockData/timetable.json")
@@ -15,6 +30,37 @@ document.addEventListener("DOMContentLoaded", () => {
 			})
 			.catch((error) => {
 				console.error("There was a problem with the fetch operation:", error);
+			});
+	}
+
+	// Function to populate subjects and teachers select options
+	function populateSubjectsAndTeachers() {
+		fetchJsonData("mockData/staff.json")
+			.then((staffData) => {
+				const subjectSelect = document.getElementById("ttSelectSubject");
+				const teacherSelect = document.getElementById("ttSelectTeacher");
+				subjectSelect.innerHTML = "";
+				teacherSelect.innerHTML = "";
+				const subjectsSet = new Set();
+				staffData.staff.forEach((staff) => {
+					staff.subjects.forEach((subject) => {
+						subjectsSet.add(subject);
+					});
+					const fullName = `${staff.title} ${staff.first_name} ${staff.last_name}`;
+					const option = document.createElement("option");
+					option.value = fullName;
+					option.textContent = fullName;
+					teacherSelect.appendChild(option);
+				});
+				subjectsSet.forEach((subject) => {
+					const option = document.createElement("option");
+					option.value = subject;
+					option.textContent = subject;
+					subjectSelect.appendChild(option);
+				});
+			})
+			.catch((error) => {
+				console.error("Error fetching staff data:", error);
 			});
 	}
 
@@ -90,6 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
 					classTabs.appendChild(listItem);
 				});
 			});
+
+			populateSubjectsAndTeachers();
 		}
 
 		// Define a variable to store the selected class
@@ -177,107 +225,74 @@ document.addEventListener("DOMContentLoaded", () => {
 							editLink.setAttribute("data-bs-toggle", "modal");
 							editLink.setAttribute("data-bs-target", "#editPeriodModal");
 
-							document.addEventListener("click", (event) => {
-								const target = event.target;
+							document.addEventListener("DOMContentLoaded", async () => {
+								// Fetch staff data and populate subjects and staff names
+								const staffData = await fetchJsonData("mockData/staff.json");
 
-								// Check if the clicked element is an edit link inside a timetable cell
-								if (target.classList.contains("edit-period")) {
-									event.preventDefault();
+								// Log the fetched data for debugging
+								console.log("Fetched Staff Data: ", staffData);
 
-									// Get the corresponding timetable cell's data attributes
-									const day = target.getAttribute("data-day");
-									const period = target.getAttribute("data-period");
-									const scheduleData = jsonData[day.toLowerCase()][period - 1];
+								if (staffData && staffData.staff) {
+									populateSubjects(staffData);
+									populateStaffNames(staffData);
+								}
 
-									// Populate modal fields with scheduleData
-									document.getElementById("ttSelectSubject").innerHTML = "";
-									document.getElementById("ttSelectTeacher").innerHTML = "";
-
-									// Fetch subjects data
-									fetch("mockData/subjects.json")
-										.then((response) => response.json())
-										.then((subjectsData) => {
-											// Populate the subject select options (both first_cycle and second_cycle)
-											const subjects = subjectsData.subjects;
-											const subjectSelect =
-												document.getElementById("ttSelectSubject");
-											subjects.first_cycle.forEach((subject) => {
-												const option = document.createElement("option");
-												option.value = subject.name;
-												option.textContent = subject.name;
-												subjectSelect.appendChild(option);
-											});
-
-											subjects.second_cycle.forEach((subject) => {
-												const option = document.createElement("option");
-												option.value = subject.name;
-												option.textContent = subject.name;
-												subjectSelect.appendChild(option);
-											});
-
-											// Set the selected subject
-											subjectSelect.value = scheduleData.subject;
-										})
-										.catch((error) => {
-											console.error("Error fetching subjects:", error);
-										});
-
-									// Fetch teachers data
-									fetch("mockData/staff.json")
-										.then((response) => response.json())
-										.then((staffData) => {
-											// Populate the teacher select options
-											const teachers = staffData.staff;
-											const teacherSelect =
-												document.getElementById("ttSelectTeacher");
-											teachers.forEach((teacher) => {
-												const option = document.createElement("option");
-												option.value =
-													teacher.first_name + " " + teacher.last_name;
-												option.textContent =
-													teacher.first_name + " " + teacher.last_name;
-												teacherSelect.appendChild(option);
-											});
-
-											// Set the selected teacher
-											teacherSelect.value = scheduleData.teacher;
-										})
-										.catch((error) => {
-											console.error("Error fetching teachers:", error);
-										});
-
-									// Get the modal element
-									const modal = new bootstrap.Modal(
-										document.getElementById("editPeriodModal")
-									);
-
-									// Open the modal
-									modal.show();
-
-									// Handle form submission
-									const form = document.querySelector(".modal-body form");
-									form.addEventListener("submit", function (event) {
+								// Event listener for timetable links
+								document.addEventListener("click", (event) => {
+									if (event.target.classList.contains("edit-period")) {
+										// Prevent default link behavior
 										event.preventDefault();
 
-										// Get edited values from the form
-										const editedSubject =
-											document.getElementById("ttSelectSubject").value;
-										const editedTeacher =
-											document.getElementById("ttSelectTeacher").value;
+										// Get the corresponding timetable cell's data attributes
+										const day = event.target.getAttribute("data-day");
+										const period = event.target.getAttribute("data-period");
+										const scheduleData =
+											jsonData[day.toLowerCase()][period - 1];
 
-										// Update jsonData with edited data
-										scheduleData.subject = editedSubject;
-										scheduleData.teacher = editedTeacher;
+										// Populate modal fields with scheduleData
+										document.getElementById("ttSelectSubject").value =
+											scheduleData.subject;
+										document.getElementById("ttSelectTeacher").value =
+											scheduleData.teacher;
 
-										// Update the UI to reflect changes
-										const updatedCellId = `${day}-${period}`;
-										const updatedCell = document.getElementById(updatedCellId);
-										updatedCell.innerHTML = `<span class="tt-subject">${scheduleData.subject}</span><br><span class="tt-teacher">${scheduleData.teacher}</span>`;
+										// Get the modal element
+										const modal = new bootstrap.Modal(
+											document.getElementById("editPeriodModal")
+										);
 
-										// Close the modal
-										modal.hide();
-									});
-								}
+										// Open the modal
+										modal.show();
+
+										// Handle form submission
+										const form = document.querySelector(".modal-body form");
+										form.addEventListener("submit", function (event) {
+											event.preventDefault();
+
+											// Get edited values from the form
+											const editedSubject =
+												document.getElementById("ttSelectSubject").value;
+											const editedTeacher =
+												document.getElementById("ttSelectTeacher").value;
+
+											// Update jsonData with edited data
+											scheduleData.subject = editedSubject;
+											scheduleData.teacher = editedTeacher;
+
+											// Update the UI to reflect changes
+											const updatedCellId = `${day}-${period}`;
+											const updatedCell =
+												document.getElementById(updatedCellId);
+											updatedCell.innerHTML = `<span class="tt-subject">${scheduleData.subject}</span><br><span class="tt-teacher">${scheduleData.teacher}</span>`;
+
+											// Close the modal
+											modal.hide();
+										});
+
+										// Log selected subject and teacher for debugging
+										console.log("Selected Subject: ", scheduleData.subject);
+										console.log("Selected Teacher: ", scheduleData.teacher);
+									}
+								});
 							});
 
 							// Create spans for subject and teacher
