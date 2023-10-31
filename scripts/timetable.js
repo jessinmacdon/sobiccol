@@ -41,6 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
 				const teacherSelect = document.getElementById("ttSelectTeacher");
 				subjectSelect.innerHTML = "";
 				teacherSelect.innerHTML = "";
+
+				// Add default options
+				const subjectDefaultOption = document.createElement("option");
+				subjectDefaultOption.value = "0";
+				subjectDefaultOption.textContent = "Choose subject";
+				subjectSelect.appendChild(subjectDefaultOption);
+
+				const teacherDefaultOption = document.createElement("option");
+				teacherDefaultOption.value = "0";
+				teacherDefaultOption.textContent = "Choose teacher";
+				teacherSelect.appendChild(teacherDefaultOption);
+
 				const subjectsSet = new Set();
 				staffData.staff.forEach((staff) => {
 					staff.subjects.forEach((subject) => {
@@ -317,6 +329,62 @@ document.addEventListener("DOMContentLoaded", () => {
 										console.log("Selected Teacher: ", scheduleData.teacher);
 									}
 								});
+
+								// Event listener for form submission
+								const form = document.querySelector(".modal-body form");
+								form.addEventListener("submit", function (event) {
+									event.preventDefault();
+
+									// Get values from the form
+									const day = document.getElementById("dayInput").value;
+									const period = document.getElementById("periodInput").value;
+									const updatedSubject =
+										document.getElementById("ttSelectSubject").value;
+									const updatedTeacher =
+										document.getElementById("ttSelectTeacher").value;
+
+									// Call the updateTimetableData function with the obtained values
+									updateTimetableData(
+										day,
+										period,
+										updatedSubject,
+										updatedTeacher
+									);
+								});
+
+								// Placeholder function to update timetable data
+								function updateTimetableData(
+									day,
+									period,
+									updatedSubject,
+									updatedTeacher
+								) {
+									// Here, you should add the code to send the updated data to your server/database.
+									// This function will be called when the form inside the modal is submitted.
+									// You can use fetch or any other method to send a POST request to the server
+									// with the updated timetable data. Let me know if you have any questions
+
+									fetch("YOUR_SERVER_ENDPOINT", {
+										method: "POST", // Use POST method to send data to the server
+										headers: {
+											"Content-Type": "application/json",
+										},
+										body: JSON.stringify({
+											day: day,
+											period: period,
+											subject: updatedSubject,
+											teacher: updatedTeacher,
+										}),
+									})
+										.then((response) => response.json())
+										.then((data) => {
+											console.log("Timetable data updated successfully:", data);
+											// You can add code here to update the UI if needed.
+										})
+										.catch((error) => {
+											console.error("Error updating timetable data:", error);
+										});
+								}
 							});
 
 							// Create spans for subject and teacher
