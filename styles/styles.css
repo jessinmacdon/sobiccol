@@ -78,6 +78,10 @@
   height: 20px;
 }
 
+#addNewPeriod {
+  display: none;
+}
+
 #classTabs li {
   display: flex;
   align-items: center;

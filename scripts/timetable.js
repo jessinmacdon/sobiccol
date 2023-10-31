@@ -216,9 +216,33 @@ document.addEventListener("DOMContentLoaded", () => {
 							editLink.href = "#";
 							editLink.classList.add("edit-period");
 
+							// Check if the current period is empty
+							const isPeriodEmpty = !schedule.subject && !schedule.teacher;
+
 							// Create the <i> element for the edit icon
 							const editIcon = document.createElement("i");
-							editIcon.classList.add("bx", "bxs-edit");
+
+							// Get the modal header elements
+							const modalHeader = document.getElementById(
+								"editPeriodModalLabel"
+							);
+							const addNewPeriodHeader =
+								document.getElementById("addNewPeriod");
+
+							if (isPeriodEmpty) {
+								// If the cell is empty, use the plus icon
+								editIcon.classList.add("bx", "bxs-plus-circle"); // Change this to the appropriate icon class for adding a new period
+								// Set modal header to "Add New Period"
+								modalHeader.style.display = "none";
+								addNewPeriodHeader.style.display = "block";
+							} else {
+								// If the cell is not empty, use the edit icon
+								editIcon.classList.add("bx", "bxs-edit"); // Change this to the appropriate icon class for editing a period
+								// Set modal header to "Edit Period"
+								modalHeader.style.display = "block";
+								addNewPeriodHeader.style.display = "none";
+							}
+
 							editLink.appendChild(editIcon);
 
 							// Add Bootstrap attributes to trigger the modal
